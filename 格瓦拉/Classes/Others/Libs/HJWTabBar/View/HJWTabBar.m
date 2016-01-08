@@ -1,13 +1,13 @@
 //
 //  HJWTabBar.m
-//  格瓦拉
+//  贺嘉炜
 //
 //  Created by shoule on 16/1/7.
 //  Copyright © 2016年 SaiDicaprio. All rights reserved.
 //
 
 #import "HJWTabBar.h"
-#import "CAAnimation+YALTabBarViewAnimations.h"
+#import "CAAnimation+HJWTabBarViewAnimations.h"
 #import "CATransaction+TransactionWithAnimationsAndCompletion.h"
 #import "HJWTabBarItem.h"
 #import "Const.h"

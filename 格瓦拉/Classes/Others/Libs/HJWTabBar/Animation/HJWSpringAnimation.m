@@ -1,6 +1,12 @@
-// For License please refer to LICENSE file in the root of YALAnimatingTabBarController project
+//
+//  HJWSpringAnimation.m
+//  贺嘉炜
+//
+//  Created by SaiDicaprio on 16/1/7.
+//  Copyright © 2016年 SaiDicaprio. All rights reserved.
+//
 
-#import "YALSpringAnimation.h"
+#import "HJWSpringAnimation.h"
 #import <UIKit/UIKit.h>
 
 static const NSUInteger kNumberOfPoints = 500;
@@ -9,7 +15,7 @@ static const double kVelocityMutiplier = 10;
 
 double yal_normalizeAnimationValue(double value, double damping, double velocity);
 
-@implementation YALSpringAnimation
+@implementation HJWSpringAnimation
 
 + (instancetype)animationWithKeyPath:(NSString *)keyPath
                             duration:(CFTimeInterval)duration
@@ -18,7 +24,7 @@ double yal_normalizeAnimationValue(double value, double damping, double velocity
                            fromValue:(double)fromValue
                              toValue:(double)toValue
 {
-    YALSpringAnimation *animation = [self.class animationWithKeyPath:keyPath];
+    HJWSpringAnimation *animation = [self.class animationWithKeyPath:keyPath];
     
     animation.removedOnCompletion = NO;
     animation.fillMode = kCAFillModeForwards;
@@ -36,7 +42,7 @@ double yal_normalizeAnimationValue(double value, double damping, double velocity
                                               fromValue:(CGRect)fromValue
                                                 toValue:(CGRect)toValue
 {
-    YALSpringAnimation *animation = [self.class animationWithKeyPath:@"path"];
+    HJWSpringAnimation *animation = [self.class animationWithKeyPath:@"path"];
     
     animation.removedOnCompletion = NO;
     animation.fillMode = kCAFillModeForwards;

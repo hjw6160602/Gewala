@@ -1,6 +1,12 @@
-// For License please refer to LICENSE file in the root of YALAnimatingTabBarController project
+//
+//  HJWAnimatingTabBarConstants.m
+//  贺嘉炜
+//
+//  Created by SaiDicaprio on 16/1/7.
+//  Copyright © 2016年 SaiDicaprio. All rights reserved.
+//
 
-#import "YALAnimatingTabBarConstants.h"
+#import "HJWAnimatingTabBarConstants.h"
 
 CGFloat const YALBottomSelectedDotDefaultSize = 4.f;
 CGFloat const YALBottomSelectedDotOffset = 16.f;

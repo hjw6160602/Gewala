@@ -1,10 +1,16 @@
-// For License please refer to LICENSE file in the root of YALAnimatingTabBarController project
+//
+//  CAAnimation+HJWTabBarViewAnimations.m
+//  贺嘉炜
+//
+//  Created by SaiDicaprio on 16/1/7.
+//  Copyright © 2016年 SaiDicaprio. All rights reserved.
+//
 
-#import "CAAnimation+YALTabBarViewAnimations.h"
-#import "YALSpringAnimation.h"
-#import "YALAnimatingTabBarConstants.h"
+#import "CAAnimation+HJWTabBarViewAnimations.h"
+#import "HJWSpringAnimation.h"
+#import "HJWAnimatingTabBarConstants.h"
 
-@implementation CAAnimation (YALTabBarViewAnimations)
+@implementation CAAnimation (HJWTabBarViewAnimations)
 
 #pragma mark - Additional buttons animations
 
@@ -26,7 +32,7 @@
     rotation.fillMode = kCAFillModeForwards;
     rotation.removedOnCompletion = NO;
     
-    YALSpringAnimation *bouncedRotation = [self rotationBouncedAnimationFromValue:kYALAdditionalButtonsAnimationsParameters.bounce.fromValue
+    HJWSpringAnimation *bouncedRotation = [self rotationBouncedAnimationFromValue:kYALAdditionalButtonsAnimationsParameters.bounce.fromValue
                                                                           toValue:kYALAdditionalButtonsAnimationsParameters.bounce.toValue];
     bouncedRotation.beginTime = kYALAdditionalButtonsAnimationsParameters.bounce.beginTime;
     
@@ -36,7 +42,7 @@
 #pragma mark - Extra buttons animations
 
 + (CAAnimation *)animationForExtraLeftBarItem {
-    return [YALSpringAnimation animationWithKeyPath:@"transform.rotation.z"
+    return [HJWSpringAnimation animationWithKeyPath:@"transform.rotation.z"
                                            duration:kYALExtraLeftTabBarItemAnimationParameters.duration
                                             damping:kYALExtraLeftTabBarItemAnimationParameters.damping
                                            velocity:kYALExtraLeftTabBarItemAnimationParameters.velocity
@@ -45,7 +51,7 @@
 }
 
 + (CAAnimation *)animationForExtraRightBarItem {
-    return [YALSpringAnimation animationWithKeyPath:@"transform.rotation.z"
+    return [HJWSpringAnimation animationWithKeyPath:@"transform.rotation.z"
                                            duration:kYALExtraRightTabBarItemAnimationParameters.duration
                                             damping:kYALExtraRightTabBarItemAnimationParameters.damping
                                            velocity:kYALExtraRightTabBarItemAnimationParameters.velocity
@@ -56,7 +62,7 @@
 #pragma mark - Tab bar view animations
 
 + (CAAnimation *)animationForTabBarExpandFromRect:(CGRect)fromRect toRect:(CGRect)toRect {
-    return [YALSpringAnimation animationForRoundedRectPathWithduration:kYALTabBarExpandAnimationParameters.duration
+    return [HJWSpringAnimation animationForRoundedRectPathWithduration:kYALTabBarExpandAnimationParameters.duration
                                                                damping:kYALTabBarExpandAnimationParameters.damping
                                                               velocity:kYALTabBarExpandAnimationParameters.velocity
                                                              fromValue:fromRect
@@ -64,7 +70,7 @@
 }
 
 + (CAAnimation *)animationForTabBarCollapseFromRect:(CGRect)fromRect toRect:(CGRect)toRect {
-    return [YALSpringAnimation animationForRoundedRectPathWithduration:kYALTabBarCollapseAnimationParameters.duration
+    return [HJWSpringAnimation animationForRoundedRectPathWithduration:kYALTabBarCollapseAnimationParameters.duration
                                                                damping:kYALTabBarCollapseAnimationParameters.damping
                                                               velocity:kYALTabBarCollapseAnimationParameters.velocity
                                                              fromValue:fromRect
@@ -81,7 +87,7 @@
     rotation.fillMode = kCAFillModeForwards;
     rotation.removedOnCompletion = NO;
     
-    YALSpringAnimation *bouncedRotation = [self rotationBouncedAnimationFromValue:kYALCenterButtonExpandAnimationParameters.bounce.fromValue
+    HJWSpringAnimation *bouncedRotation = [self rotationBouncedAnimationFromValue:kYALCenterButtonExpandAnimationParameters.bounce.fromValue
                                                                           toValue:kYALCenterButtonExpandAnimationParameters.bounce.toValue];
     bouncedRotation.beginTime = kYALCenterButtonExpandAnimationParameters.bounce.beginTime;
     
@@ -96,7 +102,7 @@
     rotation.fillMode = kCAFillModeForwards;
     rotation.removedOnCompletion = NO;
 
-    YALSpringAnimation *bouncedRotation = [self rotationBouncedAnimationFromValue:kYALCenterButtonCollapseAnimationParameters.bounce.fromValue
+    HJWSpringAnimation *bouncedRotation = [self rotationBouncedAnimationFromValue:kYALCenterButtonCollapseAnimationParameters.bounce.fromValue
                                                                           toValue:kYALCenterButtonCollapseAnimationParameters.bounce.toValue];
     bouncedRotation.beginTime = kYALCenterButtonCollapseAnimationParameters.bounce.beginTime;
     
@@ -132,8 +138,8 @@
 
 #pragma mark Rotation bounce animation
 
-+ (YALSpringAnimation *)rotationBouncedAnimationFromValue:(double)fromValue toValue:(double)toValue {
-    return [YALSpringAnimation animationWithKeyPath:@"transform.rotation.z"
++ (HJWSpringAnimation *)rotationBouncedAnimationFromValue:(double)fromValue toValue:(double)toValue {
+    return [HJWSpringAnimation animationWithKeyPath:@"transform.rotation.z"
                                            duration:kYALBounceAnimationParameters.duration
                                             damping:kYALBounceAnimationParameters.damping
                                            velocity:kYALBounceAnimationParameters.velocity

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		789CE3761C3FB1590033B583 /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE35A1C3FB1590033B583 /* YALSpringAnimation.m */; };
-		789CE3771C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE35F1C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations.m */; };
-		789CE3781C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3631C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
-		789CE3791C3FB1590033B583 /* YALAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3661C3FB1590033B583 /* YALAnimatingTabBarConstants.m */; };
-		789CE37F1C3FB1800033B583 /* HJWTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE37E1C3FB1800033B583 /* HJWTabBarItem.m */; };
-		789CE3821C3FB19D0033B583 /* HJWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3811C3FB19D0033B583 /* HJWTabBarController.m */; };
-		789CE3851C3FB1B50033B583 /* HJWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3841C3FB1B50033B583 /* HJWTabBar.m */; };
+		789CE3791C3FB1590033B583 /* HJWAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3661C3FB1590033B583 /* HJWAnimatingTabBarConstants.m */; };
+		789CE38B1C3FB42B0033B583 /* HJWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE38A1C3FB42B0033B583 /* HJWTabBarController.m */; };
+		789CE38E1C3FB4390033B583 /* HJWTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE38D1C3FB4390033B583 /* HJWTabBarItem.m */; };
+		789CE3941C3FB4520033B583 /* HJWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3931C3FB4520033B583 /* HJWTabBar.m */; };
+		789CE3971C3FB47E0033B583 /* CAAnimation+HJWTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3961C3FB47E0033B583 /* CAAnimation+HJWTabBarViewAnimations.m */; };
+		789CE39A1C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3991C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
+		789CE39D1C3FB65B0033B583 /* HJWSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE39C1C3FB65B0033B583 /* HJWSpringAnimation.m */; };
 		78E1B1331C3E674000308ED0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B1321C3E674000308ED0 /* main.m */; };
 		78E1B13E1C3E674200308ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78E1B13D1C3E674200308ED0 /* Assets.xcassets */; };
 		78E1B1A61C3E67F400308ED0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B16A1C3E67F400308ED0 /* AppDelegate.m */; };
@@ -51,20 +51,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		789CE3591C3FB1590033B583 /* YALSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSpringAnimation.h; sourceTree = "<group>"; };
-		789CE35A1C3FB1590033B583 /* YALSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSpringAnimation.m; sourceTree = "<group>"; };
-		789CE35E1C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+YALTabBarViewAnimations.h"; sourceTree = "<group>"; };
-		789CE35F1C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+YALTabBarViewAnimations.m"; sourceTree = "<group>"; };
-		789CE3621C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+TransactionWithAnimationsAndCompletion.h"; sourceTree = "<group>"; };
-		789CE3631C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+TransactionWithAnimationsAndCompletion.m"; sourceTree = "<group>"; };
-		789CE3651C3FB1590033B583 /* YALAnimatingTabBarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALAnimatingTabBarConstants.h; sourceTree = "<group>"; };
-		789CE3661C3FB1590033B583 /* YALAnimatingTabBarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALAnimatingTabBarConstants.m; sourceTree = "<group>"; };
-		789CE37D1C3FB1800033B583 /* HJWTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTabBarItem.h; sourceTree = "<group>"; };
-		789CE37E1C3FB1800033B583 /* HJWTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWTabBarItem.m; sourceTree = "<group>"; };
-		789CE3801C3FB19D0033B583 /* HJWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTabBarController.h; sourceTree = "<group>"; };
-		789CE3811C3FB19D0033B583 /* HJWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWTabBarController.m; sourceTree = "<group>"; };
-		789CE3831C3FB1B50033B583 /* HJWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTabBar.h; sourceTree = "<group>"; };
-		789CE3841C3FB1B50033B583 /* HJWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWTabBar.m; sourceTree = "<group>"; };
+		789CE3651C3FB1590033B583 /* HJWAnimatingTabBarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWAnimatingTabBarConstants.h; sourceTree = "<group>"; };
+		789CE3661C3FB1590033B583 /* HJWAnimatingTabBarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWAnimatingTabBarConstants.m; sourceTree = "<group>"; };
+		789CE3891C3FB42B0033B583 /* HJWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTabBarController.h; sourceTree = "<group>"; };
+		789CE38A1C3FB42B0033B583 /* HJWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWTabBarController.m; sourceTree = "<group>"; };
+		789CE38C1C3FB4390033B583 /* HJWTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTabBarItem.h; sourceTree = "<group>"; };
+		789CE38D1C3FB4390033B583 /* HJWTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWTabBarItem.m; sourceTree = "<group>"; };
+		789CE3921C3FB4520033B583 /* HJWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTabBar.h; sourceTree = "<group>"; };
+		789CE3931C3FB4520033B583 /* HJWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWTabBar.m; sourceTree = "<group>"; };
+		789CE3951C3FB47E0033B583 /* CAAnimation+HJWTabBarViewAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+HJWTabBarViewAnimations.h"; sourceTree = "<group>"; };
+		789CE3961C3FB47E0033B583 /* CAAnimation+HJWTabBarViewAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+HJWTabBarViewAnimations.m"; sourceTree = "<group>"; };
+		789CE3981C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+TransactionWithAnimationsAndCompletion.h"; sourceTree = "<group>"; };
+		789CE3991C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+TransactionWithAnimationsAndCompletion.m"; sourceTree = "<group>"; };
+		789CE39B1C3FB65B0033B583 /* HJWSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWSpringAnimation.h; sourceTree = "<group>"; };
+		789CE39C1C3FB65B0033B583 /* HJWSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWSpringAnimation.m; sourceTree = "<group>"; };
 		78E1B12E1C3E674000308ED0 /* 格瓦拉.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "格瓦拉.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E1B1321C3E674000308ED0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78E1B13D1C3E674200308ED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -156,9 +156,9 @@
 				789CE3571C3FB1590033B583 /* Animation */,
 				789CE35B1C3FB1590033B583 /* Category */,
 				789CE3641C3FB1590033B583 /* Constants */,
-				789CE3671C3FB1590033B583 /* Controller */,
 				789CE36B1C3FB1590033B583 /* Model */,
 				789CE3721C3FB1590033B583 /* View */,
+				789CE3671C3FB1590033B583 /* Controller */,
 			);
 			path = HJWTabBar;
 			sourceTree = "<group>";
@@ -166,18 +166,10 @@
 		789CE3571C3FB1590033B583 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				789CE3581C3FB1590033B583 /* YALSpringAnimation */,
+				789CE39B1C3FB65B0033B583 /* HJWSpringAnimation.h */,
+				789CE39C1C3FB65B0033B583 /* HJWSpringAnimation.m */,
 			);
 			path = Animation;
-			sourceTree = "<group>";
-		};
-		789CE3581C3FB1590033B583 /* YALSpringAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				789CE3591C3FB1590033B583 /* YALSpringAnimation.h */,
-				789CE35A1C3FB1590033B583 /* YALSpringAnimation.m */,
-			);
-			path = YALSpringAnimation;
 			sourceTree = "<group>";
 		};
 		789CE35B1C3FB1590033B583 /* Category */ = {
@@ -192,42 +184,26 @@
 		789CE35C1C3FB1590033B583 /* CAAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				789CE35D1C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations */,
+				789CE3951C3FB47E0033B583 /* CAAnimation+HJWTabBarViewAnimations.h */,
+				789CE3961C3FB47E0033B583 /* CAAnimation+HJWTabBarViewAnimations.m */,
 			);
 			path = CAAnimation;
-			sourceTree = "<group>";
-		};
-		789CE35D1C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations */ = {
-			isa = PBXGroup;
-			children = (
-				789CE35E1C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations.h */,
-				789CE35F1C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations.m */,
-			);
-			path = "CAAnimation+YALTabBarViewAnimations";
 			sourceTree = "<group>";
 		};
 		789CE3601C3FB1590033B583 /* CATransaction */ = {
 			isa = PBXGroup;
 			children = (
-				789CE3611C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion */,
+				789CE3981C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.h */,
+				789CE3991C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m */,
 			);
 			path = CATransaction;
-			sourceTree = "<group>";
-		};
-		789CE3611C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion */ = {
-			isa = PBXGroup;
-			children = (
-				789CE3621C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.h */,
-				789CE3631C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m */,
-			);
-			path = "CATransaction+TransactionWithAnimationsAndCompletion";
 			sourceTree = "<group>";
 		};
 		789CE3641C3FB1590033B583 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				789CE3651C3FB1590033B583 /* YALAnimatingTabBarConstants.h */,
-				789CE3661C3FB1590033B583 /* YALAnimatingTabBarConstants.m */,
+				789CE3651C3FB1590033B583 /* HJWAnimatingTabBarConstants.h */,
+				789CE3661C3FB1590033B583 /* HJWAnimatingTabBarConstants.m */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -235,52 +211,28 @@
 		789CE3671C3FB1590033B583 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				789CE3681C3FB1590033B583 /* FoldingTabBarController */,
+				789CE3891C3FB42B0033B583 /* HJWTabBarController.h */,
+				789CE38A1C3FB42B0033B583 /* HJWTabBarController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		789CE3681C3FB1590033B583 /* FoldingTabBarController */ = {
-			isa = PBXGroup;
-			children = (
-				789CE3801C3FB19D0033B583 /* HJWTabBarController.h */,
-				789CE3811C3FB19D0033B583 /* HJWTabBarController.m */,
-			);
-			path = FoldingTabBarController;
 			sourceTree = "<group>";
 		};
 		789CE36B1C3FB1590033B583 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				789CE36C1C3FB1590033B583 /* TabBarItem */,
+				789CE38C1C3FB4390033B583 /* HJWTabBarItem.h */,
+				789CE38D1C3FB4390033B583 /* HJWTabBarItem.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		789CE36C1C3FB1590033B583 /* TabBarItem */ = {
-			isa = PBXGroup;
-			children = (
-				789CE37D1C3FB1800033B583 /* HJWTabBarItem.h */,
-				789CE37E1C3FB1800033B583 /* HJWTabBarItem.m */,
-			);
-			path = TabBarItem;
 			sourceTree = "<group>";
 		};
 		789CE3721C3FB1590033B583 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				789CE3731C3FB1590033B583 /* FoldingTabBar */,
+				789CE3921C3FB4520033B583 /* HJWTabBar.h */,
+				789CE3931C3FB4520033B583 /* HJWTabBar.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		789CE3731C3FB1590033B583 /* FoldingTabBar */ = {
-			isa = PBXGroup;
-			children = (
-				789CE3831C3FB1B50033B583 /* HJWTabBar.h */,
-				789CE3841C3FB1B50033B583 /* HJWTabBar.m */,
-			);
-			path = FoldingTabBar;
 			sourceTree = "<group>";
 		};
 		789CE3861C3FB1E90033B583 /* Controller */ = {
@@ -749,34 +701,34 @@
 				78E1B1AB1C3E67F400308ED0 /* MJPropertyType.m in Sources */,
 				78E1B1AA1C3E67F400308ED0 /* MJPropertyKey.m in Sources */,
 				78E1B1AE1C3E67F400308ED0 /* NSObject+MJKeyValue.m in Sources */,
+				789CE3971C3FB47E0033B583 /* CAAnimation+HJWTabBarViewAnimations.m in Sources */,
 				78E1B1AD1C3E67F400308ED0 /* NSObject+MJCoding.m in Sources */,
 				78E1B1CD1C3E69AF00308ED0 /* BuyTicketController.m in Sources */,
 				78E1B1B71C3E67F400308ED0 /* SDWebImageDownloaderOperation.m in Sources */,
-				789CE3851C3FB1B50033B583 /* HJWTabBar.m in Sources */,
-				789CE3761C3FB1590033B583 /* YALSpringAnimation.m in Sources */,
-				789CE3821C3FB19D0033B583 /* HJWTabBarController.m in Sources */,
-				789CE3781C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
+				789CE39A1C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
 				78E1B1D61C3E69D300308ED0 /* ProfileController.m in Sources */,
 				78E1B1B01C3E67F400308ED0 /* NSString+MJExtension.m in Sources */,
 				78E1B1B31C3E67F400308ED0 /* SDImageCache.m in Sources */,
 				78E1B1A91C3E67F400308ED0 /* MJProperty.m in Sources */,
 				78E1B1AF1C3E67F400308ED0 /* NSObject+MJProperty.m in Sources */,
+				789CE3941C3FB4520033B583 /* HJWTabBar.m in Sources */,
 				78E1B1B41C3E67F400308ED0 /* SDWebImageCompat.m in Sources */,
 				78E1B1CA1C3E699200308ED0 /* ActivityController.m in Sources */,
 				78E1B1B21C3E67F400308ED0 /* NSData+ImageContentType.m in Sources */,
 				78E1B1331C3E674000308ED0 /* main.m in Sources */,
-				789CE3791C3FB1590033B583 /* YALAnimatingTabBarConstants.m in Sources */,
+				789CE3791C3FB1590033B583 /* HJWAnimatingTabBarConstants.m in Sources */,
 				78E1B1B81C3E67F400308ED0 /* SDWebImageManager.m in Sources */,
 				78E1B1B61C3E67F400308ED0 /* SDWebImageDownloader.m in Sources */,
-				789CE37F1C3FB1800033B583 /* HJWTabBarItem.m in Sources */,
+				789CE38E1C3FB4390033B583 /* HJWTabBarItem.m in Sources */,
 				78E1B1BF1C3E67F400308ED0 /* UIImageView+WebCache.m in Sources */,
+				789CE39D1C3FB65B0033B583 /* HJWSpringAnimation.m in Sources */,
 				78E1B1BE1C3E67F400308ED0 /* UIImageView+HighlightedWebCache.m in Sources */,
 				78E1B1D31C3E69C800308ED0 /* FlimController.m in Sources */,
 				78E1B1B11C3E67F400308ED0 /* MKAnnotationView+WebCache.m in Sources */,
 				78E1B1BB1C3E67F400308ED0 /* UIImage+GIF.m in Sources */,
+				789CE38B1C3FB42B0033B583 /* HJWTabBarController.m in Sources */,
 				78E1B1A81C3E67F400308ED0 /* MJFoundation.m in Sources */,
 				78E1B1B91C3E67F400308ED0 /* SDWebImagePrefetcher.m in Sources */,
-				789CE3771C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations.m in Sources */,
 				78E1B1BA1C3E67F400308ED0 /* UIButton+WebCache.m in Sources */,
 				78E1B1BC1C3E67F400308ED0 /* UIImage+MultiFormat.m in Sources */,
 				78E1B1B51C3E67F400308ED0 /* SDWebImageDecoder.m in Sources */,
