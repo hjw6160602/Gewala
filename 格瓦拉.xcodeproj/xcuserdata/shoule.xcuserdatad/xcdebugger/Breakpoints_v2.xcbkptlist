@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x683c;&#x74e6;&#x62c9;/Classes/Common/MVC/View/HJWTabBar.m"
-            timestampString = "473861048.365208"
+            timestampString = "473934459.832997"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "-addTabBarButtonWithTitle:Image:selectedImage:"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,12 +42,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x683c;&#x74e6;&#x62c9;/Classes/Common/MVC/View/HJWTabBar.m"
-            timestampString = "473863358.759404"
+            timestampString = "473934459.832997"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "-layoutSubviews"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x683c;&#x74e6;&#x62c9;/Classes/Common/MVC/View/HJWTabBar.m"
+            timestampString = "473934459.832997"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "-setSelectedIndex:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

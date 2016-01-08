@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class HJWTabBar;
+
 @interface HJWTabBarController : UITabBarController
+
+@property (nonatomic, strong, readonly) HJWTabBar *hjwTabBar;
 
 @end

@@ -20,7 +20,10 @@
 @interface HJWTabBar : UIView
 
 @property (nonatomic, weak) id<HJWTabBarDelegate> delegate;
-
+/** tabBar所存储的所有HJWTabBarItem */
+@property (nonatomic, weak, readonly) NSArray * items;
+/** 当前选中的按钮的Index */
+@property (nonatomic, assign) NSInteger selectedIndex;
 /**
  *  提供给外界创建按钮
  *

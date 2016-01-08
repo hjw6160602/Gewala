@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		789CE3761C3FB1590033B583 /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE35A1C3FB1590033B583 /* YALSpringAnimation.m */; };
+		789CE3771C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE35F1C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations.m */; };
+		789CE3781C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3631C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
+		789CE3791C3FB1590033B583 /* YALAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3661C3FB1590033B583 /* YALAnimatingTabBarConstants.m */; };
+		789CE37F1C3FB1800033B583 /* HJWTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE37E1C3FB1800033B583 /* HJWTabBarItem.m */; };
+		789CE3821C3FB19D0033B583 /* HJWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3811C3FB19D0033B583 /* HJWTabBarController.m */; };
+		789CE3851C3FB1B50033B583 /* HJWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3841C3FB1B50033B583 /* HJWTabBar.m */; };
 		78E1B1331C3E674000308ED0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B1321C3E674000308ED0 /* main.m */; };
 		78E1B13E1C3E674200308ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78E1B13D1C3E674200308ED0 /* Assets.xcassets */; };
 		78E1B1A61C3E67F400308ED0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B16A1C3E67F400308ED0 /* AppDelegate.m */; };
@@ -36,17 +43,28 @@
 		78E1B1BE1C3E67F400308ED0 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B1A01C3E67F400308ED0 /* UIImageView+HighlightedWebCache.m */; };
 		78E1B1BF1C3E67F400308ED0 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B1A21C3E67F400308ED0 /* UIImageView+WebCache.m */; };
 		78E1B1C01C3E67F400308ED0 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B1A41C3E67F400308ED0 /* UIView+WebCacheOperation.m */; };
-		78E1B1C41C3E690000308ED0 /* HJWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B1C31C3E690000308ED0 /* HJWTabBarController.m */; };
-		78E1B1C71C3E694500308ED0 /* HJWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B1C61C3E694500308ED0 /* HJWTabBar.m */; };
 		78E1B1CA1C3E699200308ED0 /* ActivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B1C91C3E699200308ED0 /* ActivityController.m */; };
 		78E1B1CD1C3E69AF00308ED0 /* BuyTicketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B1CC1C3E69AF00308ED0 /* BuyTicketController.m */; };
 		78E1B1D01C3E69BA00308ED0 /* DiscoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B1CF1C3E69BA00308ED0 /* DiscoverController.m */; };
 		78E1B1D31C3E69C800308ED0 /* FlimController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B1D21C3E69C800308ED0 /* FlimController.m */; };
 		78E1B1D61C3E69D300308ED0 /* ProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B1D51C3E69D300308ED0 /* ProfileController.m */; };
-		78E1B1D91C3E8B2B00308ED0 /* HJWTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B1D81C3E8B2B00308ED0 /* HJWTabBarItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		789CE3591C3FB1590033B583 /* YALSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSpringAnimation.h; sourceTree = "<group>"; };
+		789CE35A1C3FB1590033B583 /* YALSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSpringAnimation.m; sourceTree = "<group>"; };
+		789CE35E1C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+YALTabBarViewAnimations.h"; sourceTree = "<group>"; };
+		789CE35F1C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+YALTabBarViewAnimations.m"; sourceTree = "<group>"; };
+		789CE3621C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+TransactionWithAnimationsAndCompletion.h"; sourceTree = "<group>"; };
+		789CE3631C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+TransactionWithAnimationsAndCompletion.m"; sourceTree = "<group>"; };
+		789CE3651C3FB1590033B583 /* YALAnimatingTabBarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALAnimatingTabBarConstants.h; sourceTree = "<group>"; };
+		789CE3661C3FB1590033B583 /* YALAnimatingTabBarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALAnimatingTabBarConstants.m; sourceTree = "<group>"; };
+		789CE37D1C3FB1800033B583 /* HJWTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTabBarItem.h; sourceTree = "<group>"; };
+		789CE37E1C3FB1800033B583 /* HJWTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWTabBarItem.m; sourceTree = "<group>"; };
+		789CE3801C3FB19D0033B583 /* HJWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTabBarController.h; sourceTree = "<group>"; };
+		789CE3811C3FB19D0033B583 /* HJWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWTabBarController.m; sourceTree = "<group>"; };
+		789CE3831C3FB1B50033B583 /* HJWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTabBar.h; sourceTree = "<group>"; };
+		789CE3841C3FB1B50033B583 /* HJWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWTabBar.m; sourceTree = "<group>"; };
 		78E1B12E1C3E674000308ED0 /* 格瓦拉.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "格瓦拉.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E1B1321C3E674000308ED0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78E1B13D1C3E674200308ED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,10 +126,6 @@
 		78E1B1A31C3E67F400308ED0 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		78E1B1A41C3E67F400308ED0 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		78E1B1C11C3E684B00308ED0 /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
-		78E1B1C21C3E690000308ED0 /* HJWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTabBarController.h; sourceTree = "<group>"; };
-		78E1B1C31C3E690000308ED0 /* HJWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWTabBarController.m; sourceTree = "<group>"; };
-		78E1B1C51C3E694500308ED0 /* HJWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTabBar.h; sourceTree = "<group>"; };
-		78E1B1C61C3E694500308ED0 /* HJWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWTabBar.m; sourceTree = "<group>"; };
 		78E1B1C81C3E699200308ED0 /* ActivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityController.h; sourceTree = "<group>"; };
 		78E1B1C91C3E699200308ED0 /* ActivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityController.m; sourceTree = "<group>"; };
 		78E1B1CB1C3E69AF00308ED0 /* BuyTicketController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyTicketController.h; sourceTree = "<group>"; };
@@ -122,8 +136,6 @@
 		78E1B1D21C3E69C800308ED0 /* FlimController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlimController.m; sourceTree = "<group>"; };
 		78E1B1D41C3E69D300308ED0 /* ProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileController.h; sourceTree = "<group>"; };
 		78E1B1D51C3E69D300308ED0 /* ProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileController.m; sourceTree = "<group>"; };
-		78E1B1D71C3E8B2B00308ED0 /* HJWTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTabBarItem.h; sourceTree = "<group>"; };
-		78E1B1D81C3E8B2B00308ED0 /* HJWTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWTabBarItem.m; sourceTree = "<group>"; };
 		78E1B1DA1C3E8CC900308ED0 /* ScreenSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenSize.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +150,160 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		789CE3561C3FB1590033B583 /* HJWTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				789CE3571C3FB1590033B583 /* Animation */,
+				789CE35B1C3FB1590033B583 /* Category */,
+				789CE3641C3FB1590033B583 /* Constants */,
+				789CE3671C3FB1590033B583 /* Controller */,
+				789CE36B1C3FB1590033B583 /* Model */,
+				789CE3721C3FB1590033B583 /* View */,
+			);
+			path = HJWTabBar;
+			sourceTree = "<group>";
+		};
+		789CE3571C3FB1590033B583 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				789CE3581C3FB1590033B583 /* YALSpringAnimation */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		789CE3581C3FB1590033B583 /* YALSpringAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				789CE3591C3FB1590033B583 /* YALSpringAnimation.h */,
+				789CE35A1C3FB1590033B583 /* YALSpringAnimation.m */,
+			);
+			path = YALSpringAnimation;
+			sourceTree = "<group>";
+		};
+		789CE35B1C3FB1590033B583 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				789CE35C1C3FB1590033B583 /* CAAnimation */,
+				789CE3601C3FB1590033B583 /* CATransaction */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		789CE35C1C3FB1590033B583 /* CAAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				789CE35D1C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations */,
+			);
+			path = CAAnimation;
+			sourceTree = "<group>";
+		};
+		789CE35D1C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				789CE35E1C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations.h */,
+				789CE35F1C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations.m */,
+			);
+			path = "CAAnimation+YALTabBarViewAnimations";
+			sourceTree = "<group>";
+		};
+		789CE3601C3FB1590033B583 /* CATransaction */ = {
+			isa = PBXGroup;
+			children = (
+				789CE3611C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion */,
+			);
+			path = CATransaction;
+			sourceTree = "<group>";
+		};
+		789CE3611C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				789CE3621C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.h */,
+				789CE3631C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m */,
+			);
+			path = "CATransaction+TransactionWithAnimationsAndCompletion";
+			sourceTree = "<group>";
+		};
+		789CE3641C3FB1590033B583 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				789CE3651C3FB1590033B583 /* YALAnimatingTabBarConstants.h */,
+				789CE3661C3FB1590033B583 /* YALAnimatingTabBarConstants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		789CE3671C3FB1590033B583 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				789CE3681C3FB1590033B583 /* FoldingTabBarController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		789CE3681C3FB1590033B583 /* FoldingTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				789CE3801C3FB19D0033B583 /* HJWTabBarController.h */,
+				789CE3811C3FB19D0033B583 /* HJWTabBarController.m */,
+			);
+			path = FoldingTabBarController;
+			sourceTree = "<group>";
+		};
+		789CE36B1C3FB1590033B583 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				789CE36C1C3FB1590033B583 /* TabBarItem */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		789CE36C1C3FB1590033B583 /* TabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				789CE37D1C3FB1800033B583 /* HJWTabBarItem.h */,
+				789CE37E1C3FB1800033B583 /* HJWTabBarItem.m */,
+			);
+			path = TabBarItem;
+			sourceTree = "<group>";
+		};
+		789CE3721C3FB1590033B583 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				789CE3731C3FB1590033B583 /* FoldingTabBar */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		789CE3731C3FB1590033B583 /* FoldingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				789CE3831C3FB1B50033B583 /* HJWTabBar.h */,
+				789CE3841C3FB1B50033B583 /* HJWTabBar.m */,
+			);
+			path = FoldingTabBar;
+			sourceTree = "<group>";
+		};
+		789CE3861C3FB1E90033B583 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		789CE3871C3FB1E90033B583 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		789CE3881C3FB1E90033B583 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		78E1B1251C3E673E00308ED0 = {
 			isa = PBXGroup;
 			children = (
@@ -207,38 +373,11 @@
 		78E1B14B1C3E67F400308ED0 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
-				78E1B14C1C3E67F400308ED0 /* Controller */,
-				78E1B14D1C3E67F400308ED0 /* Model */,
-				78E1B14E1C3E67F400308ED0 /* View */,
+				789CE3861C3FB1E90033B583 /* Controller */,
+				789CE3871C3FB1E90033B583 /* Model */,
+				789CE3881C3FB1E90033B583 /* View */,
 			);
 			path = MVC;
-			sourceTree = "<group>";
-		};
-		78E1B14C1C3E67F400308ED0 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				78E1B1C21C3E690000308ED0 /* HJWTabBarController.h */,
-				78E1B1C31C3E690000308ED0 /* HJWTabBarController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		78E1B14D1C3E67F400308ED0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		78E1B14E1C3E67F400308ED0 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				78E1B1C51C3E694500308ED0 /* HJWTabBar.h */,
-				78E1B1C61C3E694500308ED0 /* HJWTabBar.m */,
-				78E1B1D71C3E8B2B00308ED0 /* HJWTabBarItem.h */,
-				78E1B1D81C3E8B2B00308ED0 /* HJWTabBarItem.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		78E1B1501C3E67F400308ED0 /* Request */ = {
@@ -460,6 +599,7 @@
 		78E1B16C1C3E67F400308ED0 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				789CE3561C3FB1590033B583 /* HJWTabBar */,
 				78E1B16D1C3E67F400308ED0 /* MJExtension */,
 				78E1B1831C3E67F400308ED0 /* SDWebImage */,
 			);
@@ -610,21 +750,25 @@
 				78E1B1AA1C3E67F400308ED0 /* MJPropertyKey.m in Sources */,
 				78E1B1AE1C3E67F400308ED0 /* NSObject+MJKeyValue.m in Sources */,
 				78E1B1AD1C3E67F400308ED0 /* NSObject+MJCoding.m in Sources */,
-				78E1B1C71C3E694500308ED0 /* HJWTabBar.m in Sources */,
 				78E1B1CD1C3E69AF00308ED0 /* BuyTicketController.m in Sources */,
 				78E1B1B71C3E67F400308ED0 /* SDWebImageDownloaderOperation.m in Sources */,
+				789CE3851C3FB1B50033B583 /* HJWTabBar.m in Sources */,
+				789CE3761C3FB1590033B583 /* YALSpringAnimation.m in Sources */,
+				789CE3821C3FB19D0033B583 /* HJWTabBarController.m in Sources */,
+				789CE3781C3FB1590033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
 				78E1B1D61C3E69D300308ED0 /* ProfileController.m in Sources */,
 				78E1B1B01C3E67F400308ED0 /* NSString+MJExtension.m in Sources */,
 				78E1B1B31C3E67F400308ED0 /* SDImageCache.m in Sources */,
-				78E1B1D91C3E8B2B00308ED0 /* HJWTabBarItem.m in Sources */,
 				78E1B1A91C3E67F400308ED0 /* MJProperty.m in Sources */,
 				78E1B1AF1C3E67F400308ED0 /* NSObject+MJProperty.m in Sources */,
 				78E1B1B41C3E67F400308ED0 /* SDWebImageCompat.m in Sources */,
 				78E1B1CA1C3E699200308ED0 /* ActivityController.m in Sources */,
 				78E1B1B21C3E67F400308ED0 /* NSData+ImageContentType.m in Sources */,
 				78E1B1331C3E674000308ED0 /* main.m in Sources */,
+				789CE3791C3FB1590033B583 /* YALAnimatingTabBarConstants.m in Sources */,
 				78E1B1B81C3E67F400308ED0 /* SDWebImageManager.m in Sources */,
 				78E1B1B61C3E67F400308ED0 /* SDWebImageDownloader.m in Sources */,
+				789CE37F1C3FB1800033B583 /* HJWTabBarItem.m in Sources */,
 				78E1B1BF1C3E67F400308ED0 /* UIImageView+WebCache.m in Sources */,
 				78E1B1BE1C3E67F400308ED0 /* UIImageView+HighlightedWebCache.m in Sources */,
 				78E1B1D31C3E69C800308ED0 /* FlimController.m in Sources */,
@@ -632,12 +776,12 @@
 				78E1B1BB1C3E67F400308ED0 /* UIImage+GIF.m in Sources */,
 				78E1B1A81C3E67F400308ED0 /* MJFoundation.m in Sources */,
 				78E1B1B91C3E67F400308ED0 /* SDWebImagePrefetcher.m in Sources */,
+				789CE3771C3FB1590033B583 /* CAAnimation+YALTabBarViewAnimations.m in Sources */,
 				78E1B1BA1C3E67F400308ED0 /* UIButton+WebCache.m in Sources */,
 				78E1B1BC1C3E67F400308ED0 /* UIImage+MultiFormat.m in Sources */,
 				78E1B1B51C3E67F400308ED0 /* SDWebImageDecoder.m in Sources */,
 				78E1B1C01C3E67F400308ED0 /* UIView+WebCacheOperation.m in Sources */,
 				78E1B1A61C3E67F400308ED0 /* AppDelegate.m in Sources */,
-				78E1B1C41C3E690000308ED0 /* HJWTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,6 +913,7 @@
 				78E1B1471C3E674200308ED0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

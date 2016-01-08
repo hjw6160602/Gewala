@@ -16,7 +16,11 @@
 #import "Const.h"
 
 @interface HJWTabBarController ()<HJWTabBarDelegate>
+/** 用于存储TabBar*/
+@property (nonatomic, strong) HJWTabBar *myTabBar;
+/** 标题 */
 @property (nonatomic, strong) NSArray *titles;
+/** 图片名称 */
 @property (nonatomic, strong) NSArray *imgNames;
 @end
 
@@ -28,6 +32,7 @@
     [self initTabBar];
 }
 
+#pragma mark - Init
 - (void)initControls{
     self.titles =  @[@"发现",@"购票",@"活动",@"电影圈",@""];
     self.imgNames = @[@"discover",@"buyTicket",@"activity",@"flimCircle",@"profile"];
@@ -67,10 +72,10 @@
 
 - (void)initTabBar{
     // 0.创建自定义的TabBar
-    HJWTabBar *myTabBar = [[HJWTabBar alloc] init];
-    myTabBar.frame = self.tabBar.frame;
-    myTabBar.delegate = self;
-    [self.view addSubview:myTabBar];
+    self.myTabBar = [[HJWTabBar alloc] init];
+    self.myTabBar.frame = self.tabBar.frame;
+    self.myTabBar.delegate = self;
+    [self.view addSubview:self.myTabBar];
     
     //    NSLog(@"viewControllers = %d", self.viewControllers.count);
     // 1.根据系统子控制器的个数来创建自定义TabBar上按钮的个数
@@ -79,12 +84,19 @@
         NSString *selName = [NSString stringWithFormat:@"%@_sel",self.imgNames[i]];
         
         // 只要调用自定义TabBar的该方法就会创建一个按钮
-        [myTabBar addTabBarButtonWithTitle:self.titles[i] Image:self.imgNames[i] selectedImage:selName];
+        [self.myTabBar addTabBarButtonWithTitle:self.titles[i] Image:self.imgNames[i] selectedImage:selName];
     }
     // 2.删除系统自带的tabBar
     [self.tabBar removeFromSuperview];
 }
 
+#pragma mark - Getter
+/** hjwTabBar的getter */
+- (HJWTabBar *)hjwTabBar{
+    return self.myTabBar;
+}
+
+#pragma mark - Actions
 /**
  *  添加一个子控制器
  *
@@ -115,8 +127,7 @@
 }
 
 #pragma mark - HJWTabBarDelegate
-- (void)tabBarDidSelectBtnFrom:(NSInteger)from to:(NSInteger)to
-{
+- (void)tabBarDidSelectBtnFrom:(NSInteger)from to:(NSInteger)to{
     // 切换子控制器
     self.selectedIndex = to;
 }
