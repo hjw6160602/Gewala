@@ -8,16 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-extern CGFloat const YALBottomSelectedDotDefaultSize;
-extern CGFloat const YALBottomSelectedDotOffset;
-extern CGFloat const YALTabBarViewDefaultHeight;
-extern CGFloat const YALExtraTabBarItemsDefaultHeight;
-extern CGFloat const YALForExtraTabBarItemsDefaultOffset;
-extern UIEdgeInsets const YALTabBarViewHDefaultEdgeInsets;
-extern UIEdgeInsets const YALTabBarViewItemsDefaultEdgeInsets;
+extern CGFloat const HJWBottomSelectedDotDefaultSize;
+extern CGFloat const HJWBottomSelectedDotOffset;
+extern CGFloat const HJWTabBarViewDefaultHeight;
+extern CGFloat const HJWExtraTabBarItemsDefaultHeight;
+extern CGFloat const HJWForExtraTabBarItemsDefaultOffset;
+extern UIEdgeInsets const HJWTabBarViewHDefaultEdgeInsets;
+extern UIEdgeInsets const HJWTabBarViewItemsDefaultEdgeInsets;
 
 
-extern CFTimeInterval const kYALExpandAnimationDuration;
+extern CFTimeInterval const kHJWExpandAnimationDuration;
 
 typedef struct {
     CFTimeInterval beginTime;
@@ -26,19 +26,19 @@ typedef struct {
     double toValue;
     double damping;
     double velocity;
-} YALAnimationParameters;
+} HJWAnimationParameters;
 
 typedef struct {
-    YALAnimationParameters scaleX;
-    YALAnimationParameters scaleY;
-    YALAnimationParameters rotation;
-    YALAnimationParameters bounce;
-} YALAdditionalButtonsAnimationsParameters;
+    HJWAnimationParameters scaleX;
+    HJWAnimationParameters scaleY;
+    HJWAnimationParameters rotation;
+    HJWAnimationParameters bounce;
+} HJWAdditionalButtonsAnimationsParameters;
 
 typedef struct {
-    YALAnimationParameters rotation;
-    YALAnimationParameters bounce;
-} YALCenterButtonAnimationsParameters;
+    HJWAnimationParameters rotation;
+    HJWAnimationParameters bounce;
+} HJWCenterButtonAnimationsParameters;
 
 typedef struct {
     NSTimeInterval duration;
@@ -46,21 +46,21 @@ typedef struct {
     CGFloat damping;
     CGFloat velocity;
     UIViewAnimationOptions options;
-} YALExtraTabBarItemViewAnimationParameters;
+} HJWExtraTabBarItemViewAnimationParameters;
 
 typedef struct {
-    YALAnimationParameters scaleX;
-    YALAnimationParameters scaleY;
-} YALSelectedDotAnimationsParameters;
+    HJWAnimationParameters scaleX;
+    HJWAnimationParameters scaleY;
+} HJWSelectedDotAnimationsParameters;
 
-extern YALAdditionalButtonsAnimationsParameters const kYALAdditionalButtonsAnimationsParameters;
-extern YALSelectedDotAnimationsParameters const kYALSelectedDotAnimationsParameters;
-extern YALAnimationParameters const kYALExtraLeftTabBarItemAnimationParameters;
-extern YALAnimationParameters const kYALExtraRightTabBarItemAnimationParameters;
-extern YALAnimationParameters const kYALTabBarExpandAnimationParameters;
-extern YALAnimationParameters const kYALTabBarCollapseAnimationParameters;
-extern YALCenterButtonAnimationsParameters const kYALCenterButtonExpandAnimationParameters;
-extern YALCenterButtonAnimationsParameters const kYALCenterButtonCollapseAnimationParameters;
-extern YALAnimationParameters const kYALBounceAnimationParameters;
-extern YALExtraTabBarItemViewAnimationParameters const kYALShowExtraTabBarItemViewAnimationParameters;
-extern YALExtraTabBarItemViewAnimationParameters const kYALHideExtraTabBarItemViewAnimationParameters;
+extern HJWAdditionalButtonsAnimationsParameters const kHJWAdditionalButtonsAnimationsParameters;
+extern HJWSelectedDotAnimationsParameters const kHJWSelectedDotAnimationsParameters;
+extern HJWAnimationParameters const kHJWExtraLeftTabBarItemAnimationParameters;
+extern HJWAnimationParameters const kHJWExtraRightTabBarItemAnimationParameters;
+extern HJWAnimationParameters const kHJWTabBarExpandAnimationParameters;
+extern HJWAnimationParameters const kHJWTabBarCollapseAnimationParameters;
+extern HJWCenterButtonAnimationsParameters const kHJWCenterButtonExpandAnimationParameters;
+extern HJWCenterButtonAnimationsParameters const kHJWCenterButtonCollapseAnimationParameters;
+extern HJWAnimationParameters const kHJWBounceAnimationParameters;
+extern HJWExtraTabBarItemViewAnimationParameters const kHJWShowExtraTabBarItemViewAnimationParameters;
+extern HJWExtraTabBarItemViewAnimationParameters const kHJWHideExtraTabBarItemViewAnimationParameters;

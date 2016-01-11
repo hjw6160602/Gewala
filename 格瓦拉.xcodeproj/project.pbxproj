@@ -14,6 +14,7 @@
 		789CE3971C3FB47E0033B583 /* CAAnimation+HJWTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3961C3FB47E0033B583 /* CAAnimation+HJWTabBarViewAnimations.m */; };
 		789CE39A1C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3991C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
 		789CE39D1C3FB65B0033B583 /* HJWSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE39C1C3FB65B0033B583 /* HJWSpringAnimation.m */; };
+		789CE3A01C3FBEBB0033B583 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE39F1C3FBEBB0033B583 /* UIView+Extension.m */; };
 		78E1B1331C3E674000308ED0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B1321C3E674000308ED0 /* main.m */; };
 		78E1B13E1C3E674200308ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78E1B13D1C3E674200308ED0 /* Assets.xcassets */; };
 		78E1B1A61C3E67F400308ED0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B16A1C3E67F400308ED0 /* AppDelegate.m */; };
@@ -65,6 +66,8 @@
 		789CE3991C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+TransactionWithAnimationsAndCompletion.m"; sourceTree = "<group>"; };
 		789CE39B1C3FB65B0033B583 /* HJWSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWSpringAnimation.h; sourceTree = "<group>"; };
 		789CE39C1C3FB65B0033B583 /* HJWSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWSpringAnimation.m; sourceTree = "<group>"; };
+		789CE39E1C3FBEBB0033B583 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		789CE39F1C3FBEBB0033B583 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		78E1B12E1C3E674000308ED0 /* 格瓦拉.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "格瓦拉.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E1B1321C3E674000308ED0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78E1B13D1C3E674200308ED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -318,6 +321,8 @@
 		78E1B14A1C3E67F400308ED0 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				789CE39E1C3FBEBB0033B583 /* UIView+Extension.h */,
+				789CE39F1C3FBEBB0033B583 /* UIView+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -714,6 +719,7 @@
 				789CE3941C3FB4520033B583 /* HJWTabBar.m in Sources */,
 				78E1B1B41C3E67F400308ED0 /* SDWebImageCompat.m in Sources */,
 				78E1B1CA1C3E699200308ED0 /* ActivityController.m in Sources */,
+				789CE3A01C3FBEBB0033B583 /* UIView+Extension.m in Sources */,
 				78E1B1B21C3E67F400308ED0 /* NSData+ImageContentType.m in Sources */,
 				78E1B1331C3E674000308ED0 /* main.m in Sources */,
 				789CE3791C3FB1590033B583 /* HJWAnimatingTabBarConstants.m in Sources */,

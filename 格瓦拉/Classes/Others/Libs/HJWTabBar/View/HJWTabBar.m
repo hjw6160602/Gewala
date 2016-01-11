@@ -10,6 +10,7 @@
 #import "CAAnimation+HJWTabBarViewAnimations.h"
 #import "CATransaction+TransactionWithAnimationsAndCompletion.h"
 #import "HJWTabBarItem.h"
+#import "UIView+Extension.h"
 #import "Const.h"
 
 @interface HJWTabBar ()
@@ -70,10 +71,10 @@
     /** 将所创建的Item 加入数组*/
     [self.myItems addObject:tabBarItem];
     [self.myItemBtns addObject:btn];
+    
 }
 
-- (void)layoutSubviews
-{
+- (void)layoutSubviews{
     [super layoutSubviews];
     //tabBarItem的个数
     NSInteger count = self.subviews.count;
@@ -81,22 +82,21 @@
     for (int i = 0; i < count ; i++) {
         
         // 取出当前item
-        UIButton *item = self.subviews[i];
+        UIButton *btn = self.subviews[i];
         if (i == 0) {
-            item.frame = CGRectMake(0, 0, ItemSelectedW, TabBar_H);
+            btn.frame = CGRectMake(0, 0, ItemSelectedW, TabBar_H);
         }
         else if (i == lastItemTag) {//最后一个item
-            item.frame = CGRectMake(SCREEN_WIDTH - ItemWidth, 0, ItemWidth, TabBar_H);
+            btn.frame = CGRectMake(SCREEN_WIDTH - ItemWidth, 0, ItemWidth, TabBar_H);
         }
         else{
             // 设置frame
             CGFloat itemW = ItemWidth;
             CGFloat itemX = ItemSelectedW + ItemWidth * (i-1);
-            item.frame = CGRectMake(itemX, 0, itemW, TabBar_H);
+            btn.frame = CGRectMake(itemX, 0, itemW, TabBar_H);
         }
-        
         // 设置按钮的Tag作为将来切换子控制器的索引
-        item.tag = i;
+        btn.tag = i;
     }
 }
 
@@ -133,25 +133,46 @@
 #pragma mark - expand/collapse
 
 - (void)transaction {
-    [CATransaction transactionWithAnimations:^{
-        self.isAnimated = YES;
-        [self animate];
-    } andCompletion:^{
-        if ([self.delegate respondsToSelector:@selector(tabBarViewDidAnimated:)]) {
-            NSLog(@"[self.delegate tabBarViewDidAnimated:self]");
+    NSInteger index = 0;
+    for (UIButton *btn in self.myItemBtns) {
+        if (index == self.selectedBtn.tag) {
+            btn.width = ItemSelectedW;
         }
-        self.isAnimated = NO;
-    }];
+        else btn.width = ItemWidth;
+        index++;
+    }
+
+//    [CATransaction transactionWithAnimations:^{
+//        self.isAnimated = YES;
+//        [self animate];
+//    } andCompletion:^{
+////        if ([self.delegate respondsToSelector:@selector(tabBarViewDidAnimated:)]) {
+//            NSLog(@"[self.delegate tabBarViewDidAnimated:self]");
+////        }
+//        self.isAnimated = NO;
+//    }];
 }
 
 - (void)tabBarViewDidAnimated:(id)sender{
     
 }
 
+
+
 - (void)animate{
-//    CAAnimation *animation = [CAAnimation animationForTabBarExpandFromRect:self.collapsedBounds toRect:self.expandedBounds];
-//    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-//    [self.mainView.layer.mask addAnimation:animation forKey:nil];
+    UIButton *selectedBtn = self.myItemBtns[self.selectedIndex];
+    
+    CAAnimation *animation = [CAAnimation animationForAdditionalButton];
+    
+    CABasicAnimation *translationX = [CABasicAnimation animationWithKeyPath:@"transform.translation.x"];
+
+//    translationX.fromValue = 2;
+//    translationX.toValue = 0;
+//    translationX.duration = 1;
+    
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    
+    [selectedBtn.layer.mask addAnimation:animation forKey:nil];
 }
 
 
