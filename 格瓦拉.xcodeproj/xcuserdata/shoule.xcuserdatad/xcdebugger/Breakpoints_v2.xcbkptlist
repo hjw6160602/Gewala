@@ -74,28 +74,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x683c;&#x74e6;&#x62c9;/Classes/Others/Libs/HJWTabBar/View/HJWTabBar.m"
-            timestampString = "474444654.970257"
+            timestampString = "474467468.682035"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "-addTabBarButtonWithTitle:Image:selectedImage:"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "-layoutSubviews"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x683c;&#x74e6;&#x62c9;/Classes/Others/Libs/HJWTabBar/View/HJWTabBar.m"
-            timestampString = "474442798.757899"
+            timestampString = "474468977.620266"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "-initWithFrame:"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "-layoutSubviews"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x683c;&#x74e6;&#x62c9;/Classes/Others/Libs/HJWTabBar/View/HJWTabBar.m"
+            timestampString = "474468977.620266"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "-layoutSubviews"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

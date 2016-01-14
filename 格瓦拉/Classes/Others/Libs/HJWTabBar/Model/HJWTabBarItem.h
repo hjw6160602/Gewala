@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-#define ItemWidth       40
-#define ItemSelectedW   80
+#define ItemMargin      10
+#define ItemWidth       30
+#define ItemSelectedW   70
 
 @class HJWBarItem;
 
@@ -27,5 +28,6 @@
 
 /** 类工厂方法 初始化TabBarItem */
 - (instancetype)initWithImage:(UIImage *)image SelectedImg:(UIImage *)selctedImg;
-- (instancetype)initWithTitle:(NSString *)title Image:(UIImage *)image SelectedImg:(UIImage *)selctedImg
+- (instancetype)initWithTitle:(NSString *)title Image:(UIImage *)image SelectedImg:(UIImage *)selctedImg;
+
 @end

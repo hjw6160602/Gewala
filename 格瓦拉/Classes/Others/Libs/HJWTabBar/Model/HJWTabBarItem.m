@@ -42,6 +42,7 @@
         [self setImage:self.barItem.selectedImage forState:UIControlStateDisabled];
         //3. 设置按钮高亮状态不调整图片
         self.adjustsImageWhenHighlighted = NO;
+        self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     }
     return self;
 }

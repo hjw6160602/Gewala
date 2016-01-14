@@ -35,6 +35,7 @@
 #pragma mark - Init
 - (void)initControls{
     self.titles =  @[@"发现",@"购票",@"活动",@"电影圈",@""];
+//    self.titles =  @[@"活动",@"电影",@""];
     self.imgNames = @[@"discover",@"buyTicket",@"activity",@"flimCircle",@"profile"];
     NSInteger index = 0;
     

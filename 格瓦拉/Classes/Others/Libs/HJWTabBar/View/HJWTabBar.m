@@ -18,11 +18,7 @@
 
 /** 定义变量记录当前选中的按钮 */
 @property (nonatomic, weak) HJWTabBarItem *selectedItem;
-/** tabBar所存储的所有HJWTabBarItem */
-@property (nonatomic, weak) NSMutableArray *myItems;
 
-/** tabBar所存储的所有HJWTabBarItem对应的Button */
-@property (nonatomic, weak) NSMutableArray *myItemBtns;
 @property (nonatomic, assign) BOOL isAnimated;
 @end
 
@@ -30,8 +26,6 @@
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]){
-        _myItems = [NSMutableArray array];
-        _myItemBtns = [NSMutableArray array];
         self.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.94];
     }
     return self;
@@ -42,7 +36,6 @@
     // 0. 创建按钮
     UIImage * image = [UIImage imageNamed:name];
     UIImage * selectedImg = [UIImage imageNamed:selName];
-    HJWTabBarItem *tabBarItem = [[HJWTabBarItem alloc]initWithImage:image SelectedImg:selectedImg];
     
     // 1.设置普通状态下的Item图片和不可用状态下的Item图片
     HJWTabBarItem *item = [[HJWTabBarItem alloc]initWithTitle:title Image:image SelectedImg:selectedImg];
@@ -60,47 +53,58 @@
     if (1 == self.subviews.count) {
         [self itemOnClick:item];
     }
-    
-    /** 将所创建的Item 加入数组*/
-    [self.myItems addObject:tabBarItem];
-    [self.myItemBtns addObject:item];
-    
 }
 
 - (void)layoutSubviews{
     [super layoutSubviews];
+    
     //tabBarItem的个数
     NSInteger count = self.subviews.count;
     NSInteger lastItemTag = count - 1;
+    NSInteger itemX = 10;
     for (int i = 0; i < count ; i++) {
-        
         // 取出当前item
-        UIButton *btn = self.subviews[i];
-        if (i == 0) {
-            btn.frame = CGRectMake(0, 0, ItemSelectedW, TabBar_H);
+        HJWTabBarItem *item = self.subviews[i];
+        item.size = CGSizeMake(ItemWidth, TabBar_H);
+        if (item.itemSelected) {
+            item.width = ItemSelectedW;
+            if (i == lastItemTag-1) item.width += 20;//电影券（3个字）
         }
+        
+        if (i == 0){
+            item.x = itemX;
+        }
+        
         else if (i == lastItemTag) {//最后一个item
-            btn.frame = CGRectMake(SCREEN_WIDTH - ItemWidth, 0, ItemWidth, TabBar_H);
+            item.x = SCREEN_WIDTH - ItemWidth;
         }
+        
         else{
             // 设置frame
-            CGFloat itemW = ItemWidth;
-            CGFloat itemX = ItemSelectedW + ItemWidth * (i-1);
-            btn.frame = CGRectMake(itemX, 0, itemW, TabBar_H);
+            item.x = itemX;
         }
+        itemX += item.width + 10;
+        NSLog(@"items[%d].frame:%@",i ,NSStringFromCGRect(item.frame));
         // 设置按钮的Tag作为将来切换子控制器的索引
-        btn.tag = i;
+        item.tag = i;
     }
+//    [CATransaction transactionWithAnimations:^{
+//        self.selectedItem.layer.bounds = CGRectMake(0, 0, 40, 49);
+////        [self Animating];
+//    } Completion:^{
+//        self.selectedItem.width = ItemWidth;
+//    }];
+    
 }
 
 #pragma mark - Getter
 - (NSArray *)items{
-    return [self.myItems copy];
+    return [self.subviews copy];
 }
 
 #pragma mark - Setter
 - (void)setSelectedIndex:(NSInteger)selectedIndex {
-    HJWTabBarItem *item = self.myItemBtns[selectedIndex];
+    HJWTabBarItem *item = self.subviews[selectedIndex];
     [self itemOnClick:item];
 }
 
@@ -115,23 +119,36 @@
     
     // 1.取消上一次选中的按钮
     self.selectedItem.enabled = YES;
-    
+    self.selectedItem.itemSelected = NO;
     // 2.设置当前被点击按钮为选中状态
     sender.enabled = NO;
+    
     // 3.记录当前选中的按钮
     self.selectedItem = sender;
+    self.selectedItem.itemSelected = YES;
+    [self layoutSubviews];
     
-    [CATransaction transactionWithAnimations:^{
-        [self Animating];
-    } Completion:^{
-        self.selectedItem.x += TO_VALUE;
-    }];
+//    NSLog(@"before:%f",self.selectedItem.width);
+//    self.selectedItem.width -= 40;
+//    NSLog(@"after:%f",self.selectedItem.width);
+    
+//    self.selectedItem.layer.bounds = CGRectMake(0, 0, 40, 49);
+//    [CATransaction transactionWithAnimations:^{
+//        self.selectedItem.layer.bounds = CGRectMake(0, 0, 40, 49);
+////        [self Animating];
+//    } Completion:^{
+//        self.selectedItem.width = ItemWidth;
+//    }];
 }
 
 #pragma mark - Animation
 - (void)Animating{
     CABasicAnimation *anim = [CABasicAnimation animation];
-    anim.keyPath = @"transform.translation.x";
+//    anim.fromValue = 
+//    anim.keyPath = @"transform.scale.x";
+    
+    
+    anim.keyPath = @"frame.size.width";
     anim.toValue = @(TO_VALUE);
     [self.selectedItem.layer addAnimation:anim forKey:@"tabBarSelected"];
 }
