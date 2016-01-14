@@ -13,10 +13,11 @@
 #import "UIView+Extension.h"
 #import "Const.h"
 
+#define  TO_VALUE  -10
 @interface HJWTabBar ()
 
 /** 定义变量记录当前选中的按钮 */
-@property (nonatomic, weak) UIButton *selectedBtn;
+@property (nonatomic, weak) HJWTabBarItem *selectedItem;
 /** tabBar所存储的所有HJWTabBarItem */
 @property (nonatomic, weak) NSMutableArray *myItems;
 
@@ -43,34 +44,26 @@
     UIImage * selectedImg = [UIImage imageNamed:selName];
     HJWTabBarItem *tabBarItem = [[HJWTabBarItem alloc]initWithImage:image SelectedImg:selectedImg];
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    // 1.设置普通状态下的Item图片和不可用状态下的Item图片
+    HJWTabBarItem *item = [[HJWTabBarItem alloc]initWithTitle:title Image:image SelectedImg:selectedImg];
     
-    // 1.设置普通状态下的Item
-    [btn setImage:tabBarItem.image forState:UIControlStateNormal];
-    
-    // 2.设置选中状态下的Item
-    // 2.1设置默认状态图片
-    [btn setTitle:title forState:UIControlStateDisabled];
-    [btn setTitleColor:HJW_GLOBLE_R forState:UIControlStateDisabled];
-    // 2.2设置不可用状态图片
-    [btn setImage:tabBarItem.selectedImage forState:UIControlStateDisabled];
+    // 2.设置tabBarItem的title颜色
+    item.titleColor = HJW_GLOBLE_R;
     
     // 3.添加按钮到自定义TabBar
-    [self addSubview:btn];
+    [self addSubview:item];
     
     // 4.监听按钮点击事件
-    [btn addTarget:self action:@selector(itemOnClick:) forControlEvents:UIControlEventTouchDown];
+    [item addTarget:self action:@selector(itemOnClick:) forControlEvents:UIControlEventTouchDown];
     
     // 5.设置默认选中按钮
     if (1 == self.subviews.count) {
-        [self itemOnClick:btn];
+        [self itemOnClick:item];
     }
     
-    // 6.设置按钮高亮状态不调整图片
-    btn.adjustsImageWhenHighlighted = NO;
     /** 将所创建的Item 加入数组*/
     [self.myItems addObject:tabBarItem];
-    [self.myItemBtns addObject:btn];
+    [self.myItemBtns addObject:item];
     
 }
 
@@ -107,73 +100,42 @@
 
 #pragma mark - Setter
 - (void)setSelectedIndex:(NSInteger)selectedIndex {
-    UIButton *btn = self.myItemBtns[selectedIndex];
-    [self itemOnClick:btn];
+    HJWTabBarItem *item = self.myItemBtns[selectedIndex];
+    [self itemOnClick:item];
 }
 
 #pragma mark - Actions
-- (void)itemOnClick:(UIButton *)sender{
+- (void)itemOnClick:(HJWTabBarItem *)sender{
     // 0.切换子控制器
 //    self.selectedIndex = sender.tag;
     // 通知TabBarController切换控制器
     if ([self.delegate respondsToSelector:@selector(tabBarDidSelectBtnFrom:to:)]) {
-        [self.delegate tabBarDidSelectBtnFrom:self.selectedBtn.tag to:sender.tag];
+        [self.delegate tabBarDidSelectBtnFrom:self.selectedItem.tag to:sender.tag];
     }
     
     // 1.取消上一次选中的按钮
-    self.selectedBtn.enabled = YES;
+    self.selectedItem.enabled = YES;
     
     // 2.设置当前被点击按钮为选中状态
     sender.enabled = NO;
     // 3.记录当前选中的按钮
-    self.selectedBtn = sender;
-    [self transaction];
+    self.selectedItem = sender;
+    
+    [CATransaction transactionWithAnimations:^{
+        [self Animating];
+    } Completion:^{
+        self.selectedItem.x += TO_VALUE;
+    }];
 }
 
-#pragma mark - expand/collapse
-
-- (void)transaction {
-    NSInteger index = 0;
-    for (UIButton *btn in self.myItemBtns) {
-        if (index == self.selectedBtn.tag) {
-            btn.width = ItemSelectedW;
-        }
-        else btn.width = ItemWidth;
-        index++;
-    }
-
-//    [CATransaction transactionWithAnimations:^{
-//        self.isAnimated = YES;
-//        [self animate];
-//    } andCompletion:^{
-////        if ([self.delegate respondsToSelector:@selector(tabBarViewDidAnimated:)]) {
-//            NSLog(@"[self.delegate tabBarViewDidAnimated:self]");
-////        }
-//        self.isAnimated = NO;
-//    }];
+#pragma mark - Animation
+- (void)Animating{
+    CABasicAnimation *anim = [CABasicAnimation animation];
+    anim.keyPath = @"transform.translation.x";
+    anim.toValue = @(TO_VALUE);
+    [self.selectedItem.layer addAnimation:anim forKey:@"tabBarSelected"];
 }
 
-- (void)tabBarViewDidAnimated:(id)sender{
-    
-}
-
-
-
-- (void)animate{
-    UIButton *selectedBtn = self.myItemBtns[self.selectedIndex];
-    
-    CAAnimation *animation = [CAAnimation animationForAdditionalButton];
-    
-    CABasicAnimation *translationX = [CABasicAnimation animationWithKeyPath:@"transform.translation.x"];
-
-//    translationX.fromValue = 2;
-//    translationX.toValue = 0;
-//    translationX.duration = 1;
-    
-    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    
-    [selectedBtn.layer.mask addAnimation:animation forKey:nil];
-}
 
 
 @end

@@ -10,6 +10,6 @@
 
 @interface CATransaction (TransactionWithAnimationsAndCompletion)
 
-+ (void)transactionWithAnimations:(void(^)(void))animations andCompletion:(void(^)(void))completion;
++ (void)transactionWithAnimations:(void(^)(void))animations Completion:(void(^)(void))completion;
 
 @end

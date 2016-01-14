@@ -11,15 +11,21 @@
 #define ItemWidth       40
 #define ItemSelectedW   80
 
+@class HJWBarItem;
 
-@interface HJWTabBarItem : NSObject
+@interface HJWTabBarItem : UIButton
 
-/** 图片 */
-@property (nonatomic, strong) UIImage *image;
-/** 被选中时的图片 */
-@property (nonatomic, strong) UIImage *selectedImage;
+/** 拥有的barItem */
+@property (nonatomic, strong) HJWBarItem *barItem;
+/** 设置文字颜色 */
+@property (nonatomic, strong) UIColor *titleColor;
+/** 设置Title */
+@property (nonatomic, copy) NSString *Title;
+
+/** 选中状态标记 */
+@property (nonatomic, assign, getter = isItemSelected) BOOL itemSelected;
 
 /** 类工厂方法 初始化TabBarItem */
 - (instancetype)initWithImage:(UIImage *)image SelectedImg:(UIImage *)selctedImg;
-
+- (instancetype)initWithTitle:(NSString *)title Image:(UIImage *)image SelectedImg:(UIImage *)selctedImg
 @end

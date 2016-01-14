@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		788E33721C476E6400FC25EB /* HJWBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 788E33711C476E6400FC25EB /* HJWBarItem.m */; };
 		789CE3791C3FB1590033B583 /* HJWAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3661C3FB1590033B583 /* HJWAnimatingTabBarConstants.m */; };
 		789CE38B1C3FB42B0033B583 /* HJWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE38A1C3FB42B0033B583 /* HJWTabBarController.m */; };
 		789CE38E1C3FB4390033B583 /* HJWTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE38D1C3FB4390033B583 /* HJWTabBarItem.m */; };
@@ -52,6 +53,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		788E33701C476E6400FC25EB /* HJWBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWBarItem.h; sourceTree = "<group>"; };
+		788E33711C476E6400FC25EB /* HJWBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWBarItem.m; sourceTree = "<group>"; };
 		789CE3651C3FB1590033B583 /* HJWAnimatingTabBarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWAnimatingTabBarConstants.h; sourceTree = "<group>"; };
 		789CE3661C3FB1590033B583 /* HJWAnimatingTabBarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWAnimatingTabBarConstants.m; sourceTree = "<group>"; };
 		789CE3891C3FB42B0033B583 /* HJWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTabBarController.h; sourceTree = "<group>"; };
@@ -223,6 +226,8 @@
 		789CE36B1C3FB1590033B583 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				788E33701C476E6400FC25EB /* HJWBarItem.h */,
+				788E33711C476E6400FC25EB /* HJWBarItem.m */,
 				789CE38C1C3FB4390033B583 /* HJWTabBarItem.h */,
 				789CE38D1C3FB4390033B583 /* HJWTabBarItem.m */,
 			);
@@ -340,6 +345,7 @@
 		78E1B1501C3E67F400308ED0 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				78E1B15C1C3E67F400308ED0 /* Discover */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -361,7 +367,6 @@
 		78E1B1531C3E67F400308ED0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				78E1B15C1C3E67F400308ED0 /* Discover */,
 				78E1B1581C3E67F400308ED0 /* BuyTicket */,
 				78E1B1541C3E67F400308ED0 /* Activity */,
 				78E1B1601C3E67F400308ED0 /* FlimCircle */,
@@ -443,7 +448,8 @@
 				78E1B15F1C3E67F400308ED0 /* View */,
 				78E1B15D1C3E67F400308ED0 /* Controller */,
 			);
-			path = Discover;
+			name = Discover;
+			path = ../../Main/Discover;
 			sourceTree = "<group>";
 		};
 		78E1B15D1C3E67F400308ED0 /* Controller */ = {
@@ -727,6 +733,7 @@
 				78E1B1B61C3E67F400308ED0 /* SDWebImageDownloader.m in Sources */,
 				789CE38E1C3FB4390033B583 /* HJWTabBarItem.m in Sources */,
 				78E1B1BF1C3E67F400308ED0 /* UIImageView+WebCache.m in Sources */,
+				788E33721C476E6400FC25EB /* HJWBarItem.m in Sources */,
 				789CE39D1C3FB65B0033B583 /* HJWSpringAnimation.m in Sources */,
 				78E1B1BE1C3E67F400308ED0 /* UIImageView+HighlightedWebCache.m in Sources */,
 				78E1B1D31C3E69C800308ED0 /* FlimController.m in Sources */,
