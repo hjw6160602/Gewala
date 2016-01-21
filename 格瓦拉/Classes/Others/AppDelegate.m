@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HJWTabBarController.h"
+#import "GlobleSingleton.h"
 #import "Const.h"
 
 @interface AppDelegate ()
@@ -20,6 +21,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:SCREEN_FRAME];
     self.window.rootViewController = [HJWTabBarController new];
+    
+    SINGLE.keyWindow = self.window;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

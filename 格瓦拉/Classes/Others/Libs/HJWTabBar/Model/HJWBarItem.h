@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#define ItemWidth       40
-#define ItemSelectedW   80
-
 @interface HJWBarItem : NSObject
 /** 图片 */
 @property (nonatomic, strong) UIImage *image;

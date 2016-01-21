@@ -36,7 +36,7 @@
 /** 沙盒缓存路径 */
 #define DOC_PATH            [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)firstObject]
 /** 全局单例 */
-#define SINGLE              [Single single]
+#define SINGLE              [GlobleSingleton new]
 /** 全局单例 [NSUserDefaults standardUserDefaults] */
 #define USER_DEFAULT        [NSUserDefaults standardUserDefaults]
 /** 通知中心 */

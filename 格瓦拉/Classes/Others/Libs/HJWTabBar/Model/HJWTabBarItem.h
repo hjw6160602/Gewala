@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #define ItemMargin      10
-#define ItemWidth       30
+#define ItemWidth       32
 #define ItemSelectedW   70
 
 @class HJWBarItem;

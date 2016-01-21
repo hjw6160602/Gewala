@@ -8,7 +8,9 @@
 
 #import "HJWTabBarItem.h"
 #import "HJWBarItem.h"
+#import "CATransaction+TransactionWithAnimationsAndCompletion.h"
 
+#define TitleFont [UIFont boldSystemFontOfSize:15]
 @implementation HJWTabBarItem
 
 #pragma mark - Initialization
@@ -26,6 +28,8 @@
         [self setImage:self.barItem.selectedImage forState:UIControlStateDisabled];
         //3. 设置按钮高亮状态不调整图片
         self.adjustsImageWhenHighlighted = NO;
+        //4. 设置按钮文字字体大小
+        [self.titleLabel setFont:TitleFont];
     }
     return self;
 }
@@ -42,6 +46,9 @@
         [self setImage:self.barItem.selectedImage forState:UIControlStateDisabled];
         //3. 设置按钮高亮状态不调整图片
         self.adjustsImageWhenHighlighted = NO;
+        //4. 设置按钮文字字体大小
+        [self.titleLabel setFont:TitleFont];
+        //4. 设置按钮内容居中
         self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     }
     return self;
@@ -56,6 +63,17 @@
 - (void)setTitleColor:(UIColor *)titleColor{
     _titleColor = titleColor;
     [self setTitleColor:titleColor forState:UIControlStateNormal];
+}
+
+- (void)setItemSelected:(BOOL)itemSelected{
+    _itemSelected = itemSelected;
+    [self.titleLabel setTransform:CGAffineTransformMakeTranslation(10, 0)];
+//    [CATransaction transactionWithAnimations:^{
+//        NSLog(@"动画开始执行");
+//        [self.titleLabel setTransform:CGAffineTransformMakeTranslation(10, 0)];
+//    } Completion:^{
+//        NSLog(@"动画执行完毕");
+//    }];
 }
 
 

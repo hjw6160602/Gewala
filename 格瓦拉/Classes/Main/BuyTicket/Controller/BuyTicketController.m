@@ -7,6 +7,7 @@
 //
 
 #import "BuyTicketController.h"
+//#import "TransitionAnimTool.h"
 
 @interface BuyTicketController ()
 
@@ -16,8 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
+
+//- (void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:YES];
+//    [TransitionAnimTool Animating:self.view.layer];
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

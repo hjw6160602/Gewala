@@ -6,8 +6,9 @@
 //  Copyright © 2016年 SaiDicaprio. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
-@interface DiscoverController : UIViewController
+#import "BaseRootController.h"
+
+@interface DiscoverController : BaseRootController
 
 @end

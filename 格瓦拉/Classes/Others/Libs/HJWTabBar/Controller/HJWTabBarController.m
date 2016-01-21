@@ -7,21 +7,25 @@
 //
 
 #import "HJWTabBarController.h"
+#import "CATransaction+TransactionWithAnimationsAndCompletion.h"
 #import "DiscoverController.h"
 #import "BuyTicketController.h"
 #import "ActivityController.h"
 #import "FlimController.h"
 #import "ProfileController.h"
+#import "UIImage+Extension.h"
+#import "GlobleSingleton.h"
 #import "HJWTabBar.h"
 #import "Const.h"
 
-@interface HJWTabBarController ()<HJWTabBarDelegate>
+@interface HJWTabBarController ()<HJWTabBarDelegate, UITabBarControllerDelegate>
 /** 用于存储TabBar*/
 @property (nonatomic, strong) HJWTabBar *myTabBar;
 /** 标题 */
 @property (nonatomic, strong) NSArray *titles;
 /** 图片名称 */
 @property (nonatomic, strong) NSArray *imgNames;
+
 @end
 
 @implementation HJWTabBarController
@@ -65,10 +69,44 @@
             default: break;
         }
         Controller.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:bgImgName]];
+//        [self addTransitionAnimation:Controller.view.layer];
         [self addOneChlildVc:Controller title:title imageName:itemImgName selectedImageName:selectedImgName];
         index++;
     }
+    //定义个转场动画
+    CATransition *animation = [CATransition animation];
+    //转场动画持续时间
+    animation.duration = 0.2f;
+    //计时函数，从头到尾的流畅度？？？
+    animation.timingFunction=UIViewAnimationCurveEaseInOut;
+    //转场动画类型
+    animation.type = kCATransitionReveal;
+    //转场动画将去的方向
+    animation.subtype = kCATransitionFromBottom;
+    //动画时你需要的实现
+    self.tabBarController.tabBar.hidden = YES;
+    //添加动画 （转场动画是添加在层上的动画）
+    
+    [self.tabBar.layer addAnimation:animation forKey:@"animation"];
+    
     self.tabBar.tintColor = HJW_GLOBLE_R;
+}
+
+/** 为控制器的layer加转场动画*/
+- (void)addTransitionAnimation:(CALayer *)layer{
+    //0.创建核心动画
+    CATransition *anim = [CATransition animation];
+    
+    //1.告诉要执行什么动画
+    //设置过度效果
+    anim.type = @"cube";
+    //2. 设置动画的过度方向（向右）
+    anim.subtype = kCATransitionFromRight;
+    //3. 设置动画的时间
+    anim.duration = 1.0;
+    //4. 设置动画的起点
+    anim.startProgress = 0.7;
+    [layer addAnimation:anim forKey:nil];
 }
 
 - (void)initTabBar{
@@ -87,9 +125,19 @@
         // 只要调用自定义TabBar的该方法就会创建一个按钮
         [self.myTabBar addTabBarButtonWithTitle:self.titles[i] Image:self.imgNames[i] selectedImage:selName];
     }
+    
     // 2.删除系统自带的tabBar
     [self.tabBar removeFromSuperview];
 }
+
+//- (void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:YES];
+//    //将tabBar放在KEYWINDOW上,在这里
+////    self.myTabBar.hidden = YES;
+//    UIWindow *window = SINGLE.keyWindow;
+//    
+//    [window addSubview:self.myTabBar];
+//}
 
 #pragma mark - Getter
 /** hjwTabBar的getter */
@@ -129,10 +177,37 @@
 
 #pragma mark - HJWTabBarDelegate
 - (void)tabBarDidSelectBtnFrom:(NSInteger)from to:(NSInteger)to{
-    // 切换子控制器
+    //0.  切换子控制器
     self.selectedIndex = to;
+    //1.  取出子数组东中的控制器
+    UINavigationController *Controller = self.childViewControllers[to];
+    //1.1 拿到该控制器的根layer
+    CALayer *layer = Controller.view.layer;
+    
+    //2. 将渲染好的背景插入到KEY_WINDOW的底下
+    UIImageView *BGImageView = [[UIImageView alloc]initWithImage:SINGLE.RenderBGImg];
+    [KEY_WINDOW insertSubview:BGImageView belowSubview:self.view];
+    
+    //3. 传入layer开始动画
+    [CATransaction transactionWithAnimations:^{
+        [self Animating:layer];
+    } Completion:^{
+        //将背景从KEY_WINDOW上面移除
+        [BGImageView removeFromSuperview];
+    }];
 }
 
+//动画函数（仍待拓展）
+- (void)Animating:(CALayer*)layer{
+    CATransition *animation =[CATransition animation];
+    animation.duration = 0.3f;
+    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault]];
+    [animation setType:kCATransitionMoveIn];
+//    animation.beginTime = 0.2;
+    [animation setSubtype:kCATransitionFromRight];
+    
+    [layer addAnimation:animation forKey:@"reveal"];
+}
 
 
 

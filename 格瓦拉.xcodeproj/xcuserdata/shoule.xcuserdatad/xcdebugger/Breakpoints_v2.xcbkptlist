@@ -9,22 +9,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "&#x683c;&#x74e6;&#x62c9;/Classes/Main/Discover/Controller/DiscoverController.m"
-            timestampString = "473857773.966757"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "&#x683c;&#x74e6;&#x62c9;/Classes/Common/MVC/View/HJWTabBar.m"
             timestampString = "473934459.832997"
             startingColumnNumber = "9223372036854775807"
@@ -73,45 +57,61 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "&#x683c;&#x74e6;&#x62c9;/Classes/Others/Libs/HJWTabBar/View/HJWTabBar.m"
-            timestampString = "474467468.682035"
+            filePath = "&#x683c;&#x74e6;&#x62c9;/Classes/Others/Libs/HJWTabBar/Controller/HJWTabBarController.m"
+            timestampString = "475060978.12946"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "-layoutSubviews"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "-addTransitionAnimation:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "&#x683c;&#x74e6;&#x62c9;/Classes/Others/Libs/HJWTabBar/View/HJWTabBar.m"
-            timestampString = "474468977.620266"
+            filePath = "&#x683c;&#x74e6;&#x62c9;/Classes/Common/MVC/Controller/BaseRootController.m"
+            timestampString = "475053393.93224"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "-layoutSubviews"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "-viewWillAppear:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "&#x683c;&#x74e6;&#x62c9;/Classes/Others/Libs/HJWTabBar/View/HJWTabBar.m"
-            timestampString = "474468977.620266"
+            filePath = "&#x683c;&#x74e6;&#x62c9;/Classes/Common/MVC/Controller/BaseRootController.m"
+            timestampString = "475053401.417655"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "-layoutSubviews"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "-viewWillAppear:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x683c;&#x74e6;&#x62c9;/Classes/Others/Libs/HJWTabBar/Controller/HJWTabBarController.m"
+            timestampString = "475061070.844582"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
+            landmarkName = "-tabBarDidSelectBtnFrom:to:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

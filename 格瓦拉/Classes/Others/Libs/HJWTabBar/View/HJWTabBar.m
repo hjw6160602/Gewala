@@ -84,7 +84,7 @@
             item.x = itemX;
         }
         itemX += item.width + 10;
-        NSLog(@"items[%d].frame:%@",i ,NSStringFromCGRect(item.frame));
+//        NSLog(@"items[%d].frame:%@",i ,NSStringFromCGRect(item.frame));
         // 设置按钮的Tag作为将来切换子控制器的索引
         item.tag = i;
     }
@@ -126,13 +126,11 @@
     // 3.记录当前选中的按钮
     self.selectedItem = sender;
     self.selectedItem.itemSelected = YES;
-    [self layoutSubviews];
     
-//    NSLog(@"before:%f",self.selectedItem.width);
-//    self.selectedItem.width -= 40;
-//    NSLog(@"after:%f",self.selectedItem.width);
+    [UIView animateWithDuration:0.3 animations:^{
+        [self layoutSubviews];
+    }];
     
-//    self.selectedItem.layer.bounds = CGRectMake(0, 0, 40, 49);
 //    [CATransaction transactionWithAnimations:^{
 //        self.selectedItem.layer.bounds = CGRectMake(0, 0, 40, 49);
 ////        [self Animating];

@@ -6,8 +6,8 @@
 //  Copyright © 2016年 SaiDicaprio. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseRootController.h"
 
-@interface BuyTicketController : UIViewController
+@interface BuyTicketController : BaseRootController
 
 @end
