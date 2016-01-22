@@ -206,7 +206,7 @@
 //    animation.beginTime = 0.2;
     [animation setSubtype:kCATransitionFromRight];
     
-    [layer addAnimation:animation forKey:@"reveal"];
+    [layer addAnimation:animation forKey:@"transition"];
 }
 
 
