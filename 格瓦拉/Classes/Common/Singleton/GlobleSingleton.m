@@ -16,7 +16,11 @@ singleton_implementation(GlobleSingleton)
     if (self.RenderBGImg) {
         imageView = [[UIImageView alloc]initWithImage:self.RenderBGImg];
     }
+    imageView.alpha = 0.8;
     return imageView;
 }
 
+- (CALayer *)RenderBGLayer{
+    return self.RenderBGView.layer;
+}
 @end

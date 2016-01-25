@@ -187,8 +187,9 @@
     CALayer *layer = Controller.view.layer;
     
     //2. 将渲染好的背景插入到KEY_WINDOW的底下
+
     [KEY_WINDOW insertSubview:SINGLE.RenderBGView belowSubview:self.view];
-    
+
     //3. 传入layer开始动画
     [CATransaction transactionWithAnimations:^{
         [self Animating:layer];
@@ -201,7 +202,7 @@
 //动画函数（仍待拓展）
 - (void)Animating:(CALayer*)layer{
     self.layer = layer;
-    
+    //0. 最简单的利用转场动画做
 //    CATransition *animation =[CATransition animation];
 //    animation.duration = 0.3f;
 //    animation.type = kCATransitionMoveIn;
@@ -210,12 +211,7 @@
 //    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
 //    [animation setSubtype:kCATransitionFromRight];
     
-    
-//    CATransition *transitionAnim =[CATransition animation];
-//    transitionAnim.type = kCATransitionFade;
-//    transitionAnim.duration = 0.4f;
-//    transitionAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
-
+    //1. 复杂点的利用关键帧动画做
 //    CAKeyframeAnimation *KeyframeAnim = [CAKeyframeAnimation animation];
 //    KeyframeAnim.keyPath = @"transform.translation.x";
 //    KeyframeAnim.values = @[@(100),@(0), @(-3), @(0)];
@@ -223,6 +219,7 @@
 //    KeyframeAnim.duration = 0.4f;
 //    KeyframeAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
     
+    //2. 更复杂点的利用自定义动画模拟实物运动做
     HJWSpringAnimation *springAnim = [HJWSpringAnimation animation];
     springAnim.keyPath = @"position.x";
     springAnim.fromValue = @(SCREEN_WIDTH/3);
@@ -234,6 +231,9 @@
     springAnim.additive = YES;
     springAnim.duration = [springAnim durationForEpsilon:0.01];
     [self.layer addAnimation:springAnim forKey:@"transition"];
+    
+    
+    
 }
 
 
