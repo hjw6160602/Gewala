@@ -1,9 +1,9 @@
 //
-//  RBBLinearInterpolation.m
-//  RBBAnimation
+//  HJWLinearInterpolation.m
+//  HJWAnimation
 //
-//  Created by Robert Böhnke on 10/25/13.
-//  Copyright (c) 2013 Robert Böhnke. All rights reserved.
+//  Created by Sai DiCaprio. on 16/1/7.
+//  Copyright © 2016年 SaiDicaprio. All rights reserved.
 //
 
 #if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
@@ -11,17 +11,17 @@
 
 #import "UIColor+PlatformIndependence.h"
 
-#define RBBColor UIColor
+#define HJWColor UIColor
 #else
 
-#define RBBColor NSColor
+#define HJWColor NSColor
 #endif
 
 #import "NSValue+PlatformIndependence.h"
 
-#import "RBBLinearInterpolation.h"
+#import "HJWLinearInterpolation.h"
 
-static RBBLinearInterpolation RBBInterpolateCATransform3D(CATransform3D from, CATransform3D to) {
+static HJWLinearInterpolation HJWInterpolateCATransform3D(CATransform3D from, CATransform3D to) {
     CATransform3D delta = {
         .m11 = to.m11 - from.m11,
         .m12 = to.m12 - from.m12,
@@ -65,7 +65,7 @@ static RBBLinearInterpolation RBBInterpolateCATransform3D(CATransform3D from, CA
     };
 }
 
-static RBBLinearInterpolation RBBInterpolateCGRect(CGRect from, CGRect to) {
+static HJWLinearInterpolation HJWInterpolateCGRect(CGRect from, CGRect to) {
     CGFloat deltaX = to.origin.x - from.origin.x;
     CGFloat deltaY = to.origin.y - from.origin.y;
     CGFloat deltaWidth = to.size.width - from.size.width;
@@ -79,11 +79,11 @@ static RBBLinearInterpolation RBBInterpolateCGRect(CGRect from, CGRect to) {
             .size.height = from.size.height + fraction * deltaHeight
         };
 
-        return [NSValue rbb_valueWithCGRect:rect];
+        return [NSValue hjw_valueWithCGRect:rect];
     };
 }
 
-static RBBLinearInterpolation RBBInterpolateCGPoint(CGPoint from, CGPoint to) {
+static HJWLinearInterpolation HJWInterpolateCGPoint(CGPoint from, CGPoint to) {
     CGFloat deltaX = to.x - from.x;
     CGFloat deltaY = to.y - from.y;
 
@@ -93,11 +93,11 @@ static RBBLinearInterpolation RBBInterpolateCGPoint(CGPoint from, CGPoint to) {
             .y = from.y + fraction * deltaY,
         };
 
-        return [NSValue rbb_valueWithCGPoint:point];
+        return [NSValue hjw_valueWithCGPoint:point];
     };
 }
 
-static RBBLinearInterpolation RBBInterpolateCGSize(CGSize from, CGSize to) {
+static HJWLinearInterpolation HJWInterpolateCGSize(CGSize from, CGSize to) {
     CGFloat deltaWidth = to.width - from.width;
     CGFloat deltaHeight = to.height - from.height;
 
@@ -107,11 +107,11 @@ static RBBLinearInterpolation RBBInterpolateCGSize(CGSize from, CGSize to) {
             .height = from.height + fraction * deltaHeight,
         };
 
-        return [NSValue rbb_valueWithCGSize:size];
+        return [NSValue hjw_valueWithCGSize:size];
     };
 }
 
-static RBBLinearInterpolation RBBInterpolateCGFloat(CGFloat from, CGFloat to) {
+static HJWLinearInterpolation HJWInterpolateCGFloat(CGFloat from, CGFloat to) {
     CGFloat delta = to - from;
 
     return ^(CGFloat fraction) {
@@ -128,30 +128,30 @@ static RBBLinearInterpolation RBBInterpolateCGFloat(CGFloat from, CGFloat to) {
 // HSBA-compatible color space. In the mean time, always create colors using
 // +olorWithHue:saturation:brightness:alpha: method.
 
-extern RBBLinearInterpolation RBBInterpolate(id from, id to) {
+extern HJWLinearInterpolation HJWInterpolate(id from, id to) {
     if ([from isKindOfClass:NSNumber.class] && [to isKindOfClass:NSNumber.class]) {
         #if CGFLOAT_IS_DOUBLE
-        return RBBInterpolateCGFloat([(NSNumber *)from doubleValue], [(NSNumber *)to doubleValue]);
+        return HJWInterpolateCGFloat([(NSNumber *)from doubleValue], [(NSNumber *)to doubleValue]);
         #else
-        return RBBInterpolateCGFloat([(NSNumber *)from floatValue], [(NSNumber *)to doubleValue]);
+        return HJWInterpolateCGFloat([(NSNumber *)from floatValue], [(NSNumber *)to doubleValue]);
         #endif
     }
 
     if (([from isKindOfClass:NSValue.class] && [to isKindOfClass:NSValue.class]) && strcmp([from objCType], [to objCType]) == 0) {
         if (strcmp([from objCType], @encode(CATransform3D)) == 0) {
-            return RBBInterpolateCATransform3D([from CATransform3DValue], [to CATransform3DValue]);
+            return HJWInterpolateCATransform3D([from CATransform3DValue], [to CATransform3DValue]);
         }
 
         if (strcmp([from objCType], @encode(CGRect)) == 0) {
-            return RBBInterpolateCGRect([from rbb_CGRectValue], [to rbb_CGRectValue]);
+            return HJWInterpolateCGRect([from hjw_CGRectValue], [to hjw_CGRectValue]);
         }
 
         if (strcmp([from objCType], @encode(CGPoint)) == 0) {
-            return RBBInterpolateCGPoint([from rbb_CGPointValue ], [to rbb_CGPointValue]);
+            return HJWInterpolateCGPoint([from hjw_CGPointValue ], [to hjw_CGPointValue]);
         }
 
         if (strcmp([from objCType], @encode(CGSize)) == 0) {
-            return RBBInterpolateCGSize([from rbb_CGSizeValue], [to rbb_CGSizeValue]);
+            return HJWInterpolateCGSize([from hjw_CGSizeValue], [to hjw_CGSizeValue]);
         }
     }
 

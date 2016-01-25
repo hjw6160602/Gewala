@@ -1,21 +1,21 @@
 //
-//  RBBAnimation.m
-//  RBBAnimation
+//  HJWAnimation.m
+//  HJWAnimation
 //
-//  Created by Robert Böhnke on 10/10/13.
-//  Copyright (c) 2013 Robert Böhnke. All rights reserved.
+//  Created by Sai DiCaprio. on 16/1/7.
+//  Copyright © 2016年 SaiDicaprio. All rights reserved.
 //
 
-#import "RBBBlockBasedArray.h"
-#import "RBBLinearInterpolation.h"
+#import "HJWBlockBasedArray.h"
+#import "HJWLinearInterpolation.h"
 
-#import "RBBAnimation.h"
+#import "HJWAnimation.h"
 
-@interface RBBAnimation ()
+@interface HJWAnimation ()
 
 @end
 
-@implementation RBBAnimation
+@implementation HJWAnimation
 
 #pragma mark - KVO
 
@@ -26,11 +26,11 @@
 #pragma mark - CAKeyframeAnimation
 
 - (NSArray *)values {
-    RBBAnimationBlock block = [self.animationBlock copy];
+    HJWAnimationBlock block = [self.animationBlock copy];
 
     CGFloat duration = self.duration;
 
-    return [RBBBlockBasedArray arrayWithCount:duration * 60 block:^id(NSUInteger idx) {
+    return [HJWBlockBasedArray arrayWithCount:duration * 60 block:^id(NSUInteger idx) {
         return block(idx / 60.0, duration);
     }];
 }

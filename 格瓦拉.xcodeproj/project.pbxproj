@@ -7,25 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		780138DE1C52005900B9E2D6 /* HJWTransitionAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138DD1C52005900B9E2D6 /* HJWTransitionAnimate.m */; };
-		780138F91C52348E00B9E2D6 /* NSValue+PlatformIndependence.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138E31C52348E00B9E2D6 /* NSValue+PlatformIndependence.m */; };
-		780138FB1C52348E00B9E2D6 /* RBBAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138E71C52348E00B9E2D6 /* RBBAnimation.m */; };
-		780138FC1C52348E00B9E2D6 /* RBBBlockBasedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138E91C52348E00B9E2D6 /* RBBBlockBasedArray.m */; };
-		780138FD1C52348E00B9E2D6 /* RBBCubicBezier.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138EB1C52348E00B9E2D6 /* RBBCubicBezier.m */; };
-		780138FE1C52348E00B9E2D6 /* RBBCustomAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138ED1C52348E00B9E2D6 /* RBBCustomAnimation.m */; };
-		780138FF1C52348E00B9E2D6 /* RBBEasingFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138EF1C52348E00B9E2D6 /* RBBEasingFunction.m */; };
-		780139001C52348E00B9E2D6 /* RBBLinearInterpolation.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138F11C52348E00B9E2D6 /* RBBLinearInterpolation.m */; };
-		780139011C52348E00B9E2D6 /* RBBSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138F31C52348E00B9E2D6 /* RBBSpringAnimation.m */; };
-		780139021C52348E00B9E2D6 /* RBBTweenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138F51C52348E00B9E2D6 /* RBBTweenAnimation.m */; };
-		780139031C52348E00B9E2D6 /* UIColor+PlatformIndependence.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138F71C52348E00B9E2D6 /* UIColor+PlatformIndependence.m */; };
+		78378A601C55D61600E4015A /* NSValue+PlatformIndependence.m in Sources */ = {isa = PBXBuildFile; fileRef = 78378A4D1C55D61600E4015A /* NSValue+PlatformIndependence.m */; };
+		78378A611C55D61600E4015A /* HJWAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 78378A4F1C55D61600E4015A /* HJWAnimation.m */; };
+		78378A621C55D61600E4015A /* HJWBlockBasedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 78378A511C55D61600E4015A /* HJWBlockBasedArray.m */; };
+		78378A631C55D61600E4015A /* HJWCubicBezier.m in Sources */ = {isa = PBXBuildFile; fileRef = 78378A531C55D61600E4015A /* HJWCubicBezier.m */; };
+		78378A641C55D61600E4015A /* HJWCustomAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 78378A551C55D61600E4015A /* HJWCustomAnimation.m */; };
+		78378A651C55D61600E4015A /* HJWEasingFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 78378A571C55D61600E4015A /* HJWEasingFunction.m */; };
+		78378A661C55D61600E4015A /* HJWLinearInterpolation.m in Sources */ = {isa = PBXBuildFile; fileRef = 78378A591C55D61600E4015A /* HJWLinearInterpolation.m */; };
+		78378A671C55D61600E4015A /* HJWSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 78378A5B1C55D61600E4015A /* HJWSpringAnimation.m */; };
+		78378A681C55D61600E4015A /* HJWTweenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 78378A5D1C55D61600E4015A /* HJWTweenAnimation.m */; };
+		78378A691C55D61600E4015A /* UIColor+PlatformIndependence.m in Sources */ = {isa = PBXBuildFile; fileRef = 78378A5F1C55D61600E4015A /* UIColor+PlatformIndependence.m */; };
 		788E33721C476E6400FC25EB /* HJWBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 788E33711C476E6400FC25EB /* HJWBarItem.m */; };
-		789CE3791C3FB1590033B583 /* HJWAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3661C3FB1590033B583 /* HJWAnimatingTabBarConstants.m */; };
 		789CE38B1C3FB42B0033B583 /* HJWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE38A1C3FB42B0033B583 /* HJWTabBarController.m */; };
 		789CE38E1C3FB4390033B583 /* HJWTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE38D1C3FB4390033B583 /* HJWTabBarItem.m */; };
 		789CE3941C3FB4520033B583 /* HJWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3931C3FB4520033B583 /* HJWTabBar.m */; };
-		789CE3971C3FB47E0033B583 /* CAAnimation+HJWTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3961C3FB47E0033B583 /* CAAnimation+HJWTabBarViewAnimations.m */; };
 		789CE39A1C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3991C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
-		789CE39D1C3FB65B0033B583 /* HJWSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE39C1C3FB65B0033B583 /* HJWSpringAnimation.m */; };
 		789CE3A01C3FBEBB0033B583 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE39F1C3FBEBB0033B583 /* UIView+Extension.m */; };
 		78E1B1331C3E674000308ED0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1B1321C3E674000308ED0 /* main.m */; };
 		78E1B13E1C3E674200308ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78E1B13D1C3E674200308ED0 /* Assets.xcassets */; };
@@ -68,44 +64,36 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		780138DC1C52005900B9E2D6 /* HJWTransitionAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTransitionAnimate.h; sourceTree = "<group>"; };
-		780138DD1C52005900B9E2D6 /* HJWTransitionAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWTransitionAnimate.m; sourceTree = "<group>"; };
-		780138E21C52348E00B9E2D6 /* NSValue+PlatformIndependence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+PlatformIndependence.h"; sourceTree = "<group>"; };
-		780138E31C52348E00B9E2D6 /* NSValue+PlatformIndependence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+PlatformIndependence.m"; sourceTree = "<group>"; };
-		780138E61C52348E00B9E2D6 /* RBBAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBAnimation.h; sourceTree = "<group>"; };
-		780138E71C52348E00B9E2D6 /* RBBAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBAnimation.m; sourceTree = "<group>"; };
-		780138E81C52348E00B9E2D6 /* RBBBlockBasedArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBBlockBasedArray.h; sourceTree = "<group>"; };
-		780138E91C52348E00B9E2D6 /* RBBBlockBasedArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBBlockBasedArray.m; sourceTree = "<group>"; };
-		780138EA1C52348E00B9E2D6 /* RBBCubicBezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBCubicBezier.h; sourceTree = "<group>"; };
-		780138EB1C52348E00B9E2D6 /* RBBCubicBezier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBCubicBezier.m; sourceTree = "<group>"; };
-		780138EC1C52348E00B9E2D6 /* RBBCustomAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBCustomAnimation.h; sourceTree = "<group>"; };
-		780138ED1C52348E00B9E2D6 /* RBBCustomAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBCustomAnimation.m; sourceTree = "<group>"; };
-		780138EE1C52348E00B9E2D6 /* RBBEasingFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBEasingFunction.h; sourceTree = "<group>"; };
-		780138EF1C52348E00B9E2D6 /* RBBEasingFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBEasingFunction.m; sourceTree = "<group>"; };
-		780138F01C52348E00B9E2D6 /* RBBLinearInterpolation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBLinearInterpolation.h; sourceTree = "<group>"; };
-		780138F11C52348E00B9E2D6 /* RBBLinearInterpolation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBLinearInterpolation.m; sourceTree = "<group>"; };
-		780138F21C52348E00B9E2D6 /* RBBSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBSpringAnimation.h; sourceTree = "<group>"; };
-		780138F31C52348E00B9E2D6 /* RBBSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBSpringAnimation.m; sourceTree = "<group>"; };
-		780138F41C52348E00B9E2D6 /* RBBTweenAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBTweenAnimation.h; sourceTree = "<group>"; };
-		780138F51C52348E00B9E2D6 /* RBBTweenAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBTweenAnimation.m; sourceTree = "<group>"; };
-		780138F61C52348E00B9E2D6 /* UIColor+PlatformIndependence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PlatformIndependence.h"; sourceTree = "<group>"; };
-		780138F71C52348E00B9E2D6 /* UIColor+PlatformIndependence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PlatformIndependence.m"; sourceTree = "<group>"; };
+		78378A4C1C55D61600E4015A /* NSValue+PlatformIndependence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSValue+PlatformIndependence.h"; path = "../../HJWAnimation/NSValue+PlatformIndependence.h"; sourceTree = "<group>"; };
+		78378A4D1C55D61600E4015A /* NSValue+PlatformIndependence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSValue+PlatformIndependence.m"; path = "../../HJWAnimation/NSValue+PlatformIndependence.m"; sourceTree = "<group>"; };
+		78378A4E1C55D61600E4015A /* HJWAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HJWAnimation.h; path = ../../HJWAnimation/HJWAnimation.h; sourceTree = "<group>"; };
+		78378A4F1C55D61600E4015A /* HJWAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HJWAnimation.m; path = ../../HJWAnimation/HJWAnimation.m; sourceTree = "<group>"; };
+		78378A501C55D61600E4015A /* HJWBlockBasedArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HJWBlockBasedArray.h; path = ../../HJWAnimation/HJWBlockBasedArray.h; sourceTree = "<group>"; };
+		78378A511C55D61600E4015A /* HJWBlockBasedArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HJWBlockBasedArray.m; path = ../../HJWAnimation/HJWBlockBasedArray.m; sourceTree = "<group>"; };
+		78378A521C55D61600E4015A /* HJWCubicBezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HJWCubicBezier.h; path = ../../HJWAnimation/HJWCubicBezier.h; sourceTree = "<group>"; };
+		78378A531C55D61600E4015A /* HJWCubicBezier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HJWCubicBezier.m; path = ../../HJWAnimation/HJWCubicBezier.m; sourceTree = "<group>"; };
+		78378A541C55D61600E4015A /* HJWCustomAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HJWCustomAnimation.h; path = ../../HJWAnimation/HJWCustomAnimation.h; sourceTree = "<group>"; };
+		78378A551C55D61600E4015A /* HJWCustomAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HJWCustomAnimation.m; path = ../../HJWAnimation/HJWCustomAnimation.m; sourceTree = "<group>"; };
+		78378A561C55D61600E4015A /* HJWEasingFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HJWEasingFunction.h; path = ../../HJWAnimation/HJWEasingFunction.h; sourceTree = "<group>"; };
+		78378A571C55D61600E4015A /* HJWEasingFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HJWEasingFunction.m; path = ../../HJWAnimation/HJWEasingFunction.m; sourceTree = "<group>"; };
+		78378A581C55D61600E4015A /* HJWLinearInterpolation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HJWLinearInterpolation.h; path = ../../HJWAnimation/HJWLinearInterpolation.h; sourceTree = "<group>"; };
+		78378A591C55D61600E4015A /* HJWLinearInterpolation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HJWLinearInterpolation.m; path = ../../HJWAnimation/HJWLinearInterpolation.m; sourceTree = "<group>"; };
+		78378A5A1C55D61600E4015A /* HJWSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HJWSpringAnimation.h; path = ../../HJWAnimation/HJWSpringAnimation.h; sourceTree = "<group>"; };
+		78378A5B1C55D61600E4015A /* HJWSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HJWSpringAnimation.m; path = ../../HJWAnimation/HJWSpringAnimation.m; sourceTree = "<group>"; };
+		78378A5C1C55D61600E4015A /* HJWTweenAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HJWTweenAnimation.h; path = ../../HJWAnimation/HJWTweenAnimation.h; sourceTree = "<group>"; };
+		78378A5D1C55D61600E4015A /* HJWTweenAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HJWTweenAnimation.m; path = ../../HJWAnimation/HJWTweenAnimation.m; sourceTree = "<group>"; };
+		78378A5E1C55D61600E4015A /* UIColor+PlatformIndependence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+PlatformIndependence.h"; path = "../../HJWAnimation/UIColor+PlatformIndependence.h"; sourceTree = "<group>"; };
+		78378A5F1C55D61600E4015A /* UIColor+PlatformIndependence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+PlatformIndependence.m"; path = "../../HJWAnimation/UIColor+PlatformIndependence.m"; sourceTree = "<group>"; };
 		788E33701C476E6400FC25EB /* HJWBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWBarItem.h; sourceTree = "<group>"; };
 		788E33711C476E6400FC25EB /* HJWBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWBarItem.m; sourceTree = "<group>"; };
-		789CE3651C3FB1590033B583 /* HJWAnimatingTabBarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWAnimatingTabBarConstants.h; sourceTree = "<group>"; };
-		789CE3661C3FB1590033B583 /* HJWAnimatingTabBarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWAnimatingTabBarConstants.m; sourceTree = "<group>"; };
 		789CE3891C3FB42B0033B583 /* HJWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTabBarController.h; sourceTree = "<group>"; };
 		789CE38A1C3FB42B0033B583 /* HJWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWTabBarController.m; sourceTree = "<group>"; };
 		789CE38C1C3FB4390033B583 /* HJWTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTabBarItem.h; sourceTree = "<group>"; };
 		789CE38D1C3FB4390033B583 /* HJWTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWTabBarItem.m; sourceTree = "<group>"; };
 		789CE3921C3FB4520033B583 /* HJWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTabBar.h; sourceTree = "<group>"; };
 		789CE3931C3FB4520033B583 /* HJWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWTabBar.m; sourceTree = "<group>"; };
-		789CE3951C3FB47E0033B583 /* CAAnimation+HJWTabBarViewAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+HJWTabBarViewAnimations.h"; sourceTree = "<group>"; };
-		789CE3961C3FB47E0033B583 /* CAAnimation+HJWTabBarViewAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+HJWTabBarViewAnimations.m"; sourceTree = "<group>"; };
 		789CE3981C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+TransactionWithAnimationsAndCompletion.h"; sourceTree = "<group>"; };
 		789CE3991C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+TransactionWithAnimationsAndCompletion.m"; sourceTree = "<group>"; };
-		789CE39B1C3FB65B0033B583 /* HJWSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWSpringAnimation.h; sourceTree = "<group>"; };
-		789CE39C1C3FB65B0033B583 /* HJWSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWSpringAnimation.m; sourceTree = "<group>"; };
 		789CE39E1C3FBEBB0033B583 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		789CE39F1C3FBEBB0033B583 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		78E1B12E1C3E674000308ED0 /* 格瓦拉.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "格瓦拉.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,39 +190,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		780138DF1C52348E00B9E2D6 /* RBBAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				780138E61C52348E00B9E2D6 /* RBBAnimation.h */,
-				780138E71C52348E00B9E2D6 /* RBBAnimation.m */,
-				780138E81C52348E00B9E2D6 /* RBBBlockBasedArray.h */,
-				780138E91C52348E00B9E2D6 /* RBBBlockBasedArray.m */,
-				780138EA1C52348E00B9E2D6 /* RBBCubicBezier.h */,
-				780138EB1C52348E00B9E2D6 /* RBBCubicBezier.m */,
-				780138EC1C52348E00B9E2D6 /* RBBCustomAnimation.h */,
-				780138ED1C52348E00B9E2D6 /* RBBCustomAnimation.m */,
-				780138EE1C52348E00B9E2D6 /* RBBEasingFunction.h */,
-				780138EF1C52348E00B9E2D6 /* RBBEasingFunction.m */,
-				780138F01C52348E00B9E2D6 /* RBBLinearInterpolation.h */,
-				780138F11C52348E00B9E2D6 /* RBBLinearInterpolation.m */,
-				780138F21C52348E00B9E2D6 /* RBBSpringAnimation.h */,
-				780138F31C52348E00B9E2D6 /* RBBSpringAnimation.m */,
-				780138F41C52348E00B9E2D6 /* RBBTweenAnimation.h */,
-				780138F51C52348E00B9E2D6 /* RBBTweenAnimation.m */,
-				780138E21C52348E00B9E2D6 /* NSValue+PlatformIndependence.h */,
-				780138E31C52348E00B9E2D6 /* NSValue+PlatformIndependence.m */,
-				780138F61C52348E00B9E2D6 /* UIColor+PlatformIndependence.h */,
-				780138F71C52348E00B9E2D6 /* UIColor+PlatformIndependence.m */,
-			);
-			path = RBBAnimation;
-			sourceTree = "<group>";
-		};
 		789CE3561C3FB1590033B583 /* HJWTabBar */ = {
 			isa = PBXGroup;
 			children = (
 				789CE3571C3FB1590033B583 /* Animation */,
 				789CE35B1C3FB1590033B583 /* Category */,
-				789CE3641C3FB1590033B583 /* Constants */,
 				789CE36B1C3FB1590033B583 /* Model */,
 				789CE3721C3FB1590033B583 /* View */,
 				789CE3671C3FB1590033B583 /* Controller */,
@@ -245,10 +205,26 @@
 		789CE3571C3FB1590033B583 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				789CE39B1C3FB65B0033B583 /* HJWSpringAnimation.h */,
-				789CE39C1C3FB65B0033B583 /* HJWSpringAnimation.m */,
-				780138DC1C52005900B9E2D6 /* HJWTransitionAnimate.h */,
-				780138DD1C52005900B9E2D6 /* HJWTransitionAnimate.m */,
+				78378A4E1C55D61600E4015A /* HJWAnimation.h */,
+				78378A4F1C55D61600E4015A /* HJWAnimation.m */,
+				78378A521C55D61600E4015A /* HJWCubicBezier.h */,
+				78378A531C55D61600E4015A /* HJWCubicBezier.m */,
+				78378A561C55D61600E4015A /* HJWEasingFunction.h */,
+				78378A571C55D61600E4015A /* HJWEasingFunction.m */,
+				78378A5A1C55D61600E4015A /* HJWSpringAnimation.h */,
+				78378A5B1C55D61600E4015A /* HJWSpringAnimation.m */,
+				78378A5C1C55D61600E4015A /* HJWTweenAnimation.h */,
+				78378A5D1C55D61600E4015A /* HJWTweenAnimation.m */,
+				78378A501C55D61600E4015A /* HJWBlockBasedArray.h */,
+				78378A511C55D61600E4015A /* HJWBlockBasedArray.m */,
+				78378A541C55D61600E4015A /* HJWCustomAnimation.h */,
+				78378A551C55D61600E4015A /* HJWCustomAnimation.m */,
+				78378A581C55D61600E4015A /* HJWLinearInterpolation.h */,
+				78378A591C55D61600E4015A /* HJWLinearInterpolation.m */,
+				78378A4C1C55D61600E4015A /* NSValue+PlatformIndependence.h */,
+				78378A4D1C55D61600E4015A /* NSValue+PlatformIndependence.m */,
+				78378A5E1C55D61600E4015A /* UIColor+PlatformIndependence.h */,
+				78378A5F1C55D61600E4015A /* UIColor+PlatformIndependence.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -256,19 +232,9 @@
 		789CE35B1C3FB1590033B583 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				789CE35C1C3FB1590033B583 /* CAAnimation */,
 				789CE3601C3FB1590033B583 /* CATransaction */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		789CE35C1C3FB1590033B583 /* CAAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				789CE3951C3FB47E0033B583 /* CAAnimation+HJWTabBarViewAnimations.h */,
-				789CE3961C3FB47E0033B583 /* CAAnimation+HJWTabBarViewAnimations.m */,
-			);
-			path = CAAnimation;
 			sourceTree = "<group>";
 		};
 		789CE3601C3FB1590033B583 /* CATransaction */ = {
@@ -278,15 +244,6 @@
 				789CE3991C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m */,
 			);
 			path = CATransaction;
-			sourceTree = "<group>";
-		};
-		789CE3641C3FB1590033B583 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				789CE3651C3FB1590033B583 /* HJWAnimatingTabBarConstants.h */,
-				789CE3661C3FB1590033B583 /* HJWAnimatingTabBarConstants.m */,
-			);
-			path = Constants;
 			sourceTree = "<group>";
 		};
 		789CE3671C3FB1590033B583 /* Controller */ = {
@@ -645,7 +602,6 @@
 		78E1B16C1C3E67F400308ED0 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				780138DF1C52348E00B9E2D6 /* RBBAnimation */,
 				789CE3561C3FB1590033B583 /* HJWTabBar */,
 				78E1B16D1C3E67F400308ED0 /* MJExtension */,
 				78E1B1831C3E67F400308ED0 /* SDWebImage */,
@@ -791,25 +747,26 @@
 			files = (
 				78E278FD1C50A0A600E064D7 /* GlobleSingleton.m in Sources */,
 				78E1B1D01C3E69BA00308ED0 /* DiscoverController.m in Sources */,
+				78378A621C55D61600E4015A /* HJWBlockBasedArray.m in Sources */,
 				78E1B1AC1C3E67F400308ED0 /* NSObject+MJClass.m in Sources */,
 				78E1B1BD1C3E67F400308ED0 /* UIImage+WebP.m in Sources */,
 				78E1B1A71C3E67F400308ED0 /* MJExtensionConst.m in Sources */,
 				78E1B1AB1C3E67F400308ED0 /* MJPropertyType.m in Sources */,
 				78E1B1AA1C3E67F400308ED0 /* MJPropertyKey.m in Sources */,
 				78E1B1AE1C3E67F400308ED0 /* NSObject+MJKeyValue.m in Sources */,
-				789CE3971C3FB47E0033B583 /* CAAnimation+HJWTabBarViewAnimations.m in Sources */,
 				78E1B1AD1C3E67F400308ED0 /* NSObject+MJCoding.m in Sources */,
 				78E1B1CD1C3E69AF00308ED0 /* BuyTicketController.m in Sources */,
+				78378A661C55D61600E4015A /* HJWLinearInterpolation.m in Sources */,
 				78E1B1B71C3E67F400308ED0 /* SDWebImageDownloaderOperation.m in Sources */,
+				78378A651C55D61600E4015A /* HJWEasingFunction.m in Sources */,
 				78E279041C50A32B00E064D7 /* BaseRootController.m in Sources */,
-				780138FB1C52348E00B9E2D6 /* RBBAnimation.m in Sources */,
-				780138F91C52348E00B9E2D6 /* NSValue+PlatformIndependence.m in Sources */,
+				78378A611C55D61600E4015A /* HJWAnimation.m in Sources */,
+				78378A691C55D61600E4015A /* UIColor+PlatformIndependence.m in Sources */,
 				789CE39A1C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
 				78E1B1D61C3E69D300308ED0 /* ProfileController.m in Sources */,
 				78E1B1B01C3E67F400308ED0 /* NSString+MJExtension.m in Sources */,
 				78E1B1B31C3E67F400308ED0 /* SDImageCache.m in Sources */,
-				780139021C52348E00B9E2D6 /* RBBTweenAnimation.m in Sources */,
-				780139031C52348E00B9E2D6 /* UIColor+PlatformIndependence.m in Sources */,
+				78378A681C55D61600E4015A /* HJWTweenAnimation.m in Sources */,
 				78E1B1A91C3E67F400308ED0 /* MJProperty.m in Sources */,
 				78E1B1AF1C3E67F400308ED0 /* NSObject+MJProperty.m in Sources */,
 				789CE3941C3FB4520033B583 /* HJWTabBar.m in Sources */,
@@ -818,32 +775,27 @@
 				789CE3A01C3FBEBB0033B583 /* UIView+Extension.m in Sources */,
 				78E1B1B21C3E67F400308ED0 /* NSData+ImageContentType.m in Sources */,
 				78E1B1331C3E674000308ED0 /* main.m in Sources */,
-				789CE3791C3FB1590033B583 /* HJWAnimatingTabBarConstants.m in Sources */,
+				78378A631C55D61600E4015A /* HJWCubicBezier.m in Sources */,
+				78378A641C55D61600E4015A /* HJWCustomAnimation.m in Sources */,
 				78E1B1B81C3E67F400308ED0 /* SDWebImageManager.m in Sources */,
 				78E1B1B61C3E67F400308ED0 /* SDWebImageDownloader.m in Sources */,
 				789CE38E1C3FB4390033B583 /* HJWTabBarItem.m in Sources */,
 				78E278F71C508D1700E064D7 /* UIImage+Extension.m in Sources */,
 				78E1B1BF1C3E67F400308ED0 /* UIImageView+WebCache.m in Sources */,
 				788E33721C476E6400FC25EB /* HJWBarItem.m in Sources */,
-				789CE39D1C3FB65B0033B583 /* HJWSpringAnimation.m in Sources */,
 				78E1B1BE1C3E67F400308ED0 /* UIImageView+HighlightedWebCache.m in Sources */,
 				78E1B1D31C3E69C800308ED0 /* FlimController.m in Sources */,
-				780139001C52348E00B9E2D6 /* RBBLinearInterpolation.m in Sources */,
 				78E1B1B11C3E67F400308ED0 /* MKAnnotationView+WebCache.m in Sources */,
-				780138DE1C52005900B9E2D6 /* HJWTransitionAnimate.m in Sources */,
 				78E1B1BB1C3E67F400308ED0 /* UIImage+GIF.m in Sources */,
-				780138FE1C52348E00B9E2D6 /* RBBCustomAnimation.m in Sources */,
-				780138FC1C52348E00B9E2D6 /* RBBBlockBasedArray.m in Sources */,
 				789CE38B1C3FB42B0033B583 /* HJWTabBarController.m in Sources */,
 				78E1B1A81C3E67F400308ED0 /* MJFoundation.m in Sources */,
-				780138FD1C52348E00B9E2D6 /* RBBCubicBezier.m in Sources */,
 				78E1B1B91C3E67F400308ED0 /* SDWebImagePrefetcher.m in Sources */,
-				780139011C52348E00B9E2D6 /* RBBSpringAnimation.m in Sources */,
 				78E1B1BA1C3E67F400308ED0 /* UIButton+WebCache.m in Sources */,
 				78E1B1BC1C3E67F400308ED0 /* UIImage+MultiFormat.m in Sources */,
-				780138FF1C52348E00B9E2D6 /* RBBEasingFunction.m in Sources */,
+				78378A671C55D61600E4015A /* HJWSpringAnimation.m in Sources */,
 				78E1B1B51C3E67F400308ED0 /* SDWebImageDecoder.m in Sources */,
 				78E278FA1C508E1A00E064D7 /* TransitionAnimTool.m in Sources */,
+				78378A601C55D61600E4015A /* NSValue+PlatformIndependence.m in Sources */,
 				78E1B1C01C3E67F400308ED0 /* UIView+WebCacheOperation.m in Sources */,
 				78E1B1A61C3E67F400308ED0 /* AppDelegate.m in Sources */,
 			);

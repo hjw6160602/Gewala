@@ -1,17 +1,17 @@
 //
-//  RBBSpringAnimation.m
-//  RBBAnimation
+//  HJWSpringAnimation.m
+//  HJWAnimation
 //
-//  Created by Robert Böhnke on 10/14/13.
-//  Copyright (c) 2013 Robert Böhnke. All rights reserved.
+//  Created by Sai DiCaprio. on 16/1/7.
+//  Copyright © 2016年 SaiDicaprio. All rights reserved.
 //
 
-#import "RBBBlockBasedArray.h"
-#import "RBBLinearInterpolation.h"
+#import "HJWBlockBasedArray.h"
+#import "HJWLinearInterpolation.h"
 
-#import "RBBSpringAnimation.h"
+#import "HJWSpringAnimation.h"
 
-@implementation RBBSpringAnimation
+@implementation HJWSpringAnimation
 
 #pragma mark - Lifecycle
 
@@ -42,7 +42,7 @@
     ]];
 }
 
-#pragma mark - RBBSpringAnimation
+#pragma mark - HJWSpringAnimation
 
 - (CFTimeInterval)durationForEpsilon:(double)epsilon {
     CGFloat beta = self.damping / (2 * self.mass);
@@ -56,9 +56,9 @@
     return duration;
 }
 
-#pragma mark - RBBAnimation
+#pragma mark - HJWAnimation
 
-- (RBBAnimationBlock)animationBlock {
+- (HJWAnimationBlock)animationBlock {
     CGFloat b = self.damping;
     CGFloat m = self.mass;
     CGFloat k = self.stiffness;
@@ -101,7 +101,7 @@
         };
     }
 
-    RBBLinearInterpolation lerp = RBBInterpolate(self.fromValue, self.toValue);
+    HJWLinearInterpolation lerp = HJWInterpolate(self.fromValue, self.toValue);
     return ^(CGFloat t, CGFloat _) {
         return lerp(oscillation(t));
     };
@@ -110,7 +110,7 @@
 #pragma mark - NSObject
 
 - (id)copyWithZone:(NSZone *)zone {
-    RBBSpringAnimation *copy = [super copyWithZone:zone];
+    HJWSpringAnimation *copy = [super copyWithZone:zone];
     if (copy == nil) return nil;
 
     copy->_damping = _damping;

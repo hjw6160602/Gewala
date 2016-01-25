@@ -1,25 +1,25 @@
 //
-//  RBBBlockBasedArray.m
-//  RBBAnimation
+//  HJWBlockBasedArray.m
+//  HJWAnimation
 //
-//  Created by Robert Böhnke on 10/11/13.
-//  Copyright (c) 2013 Robert Böhnke. All rights reserved.
+//  Created by Sai DiCaprio. on 16/1/7.
+//  Copyright © 2016年 SaiDicaprio. All rights reserved.
 //
 
-#import "RBBBlockBasedArray.h"
+#import "HJWBlockBasedArray.h"
 
-@implementation RBBBlockBasedArray {
+@implementation HJWBlockBasedArray {
     NSUInteger _count;
-    RBBBlockBasedArrayBlock _block;
+    HJWBlockBasedArrayBlock _block;
 }
 
 #pragma mark - Lifecycle
 
-+ (instancetype)arrayWithCount:(NSUInteger)count block:(RBBBlockBasedArrayBlock)block {
++ (instancetype)arrayWithCount:(NSUInteger)count block:(HJWBlockBasedArrayBlock)block {
     return [[self alloc] initWithCount:count block:block];
 }
 
-- (instancetype)initWithCount:(NSUInteger)count block:(RBBBlockBasedArrayBlock)block {
+- (instancetype)initWithCount:(NSUInteger)count block:(HJWBlockBasedArrayBlock)block {
     self = [super init];
     if (self == nil) return nil;
 

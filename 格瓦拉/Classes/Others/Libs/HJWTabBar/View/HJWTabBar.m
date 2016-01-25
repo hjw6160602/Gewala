@@ -7,7 +7,6 @@
 //
 
 #import "HJWTabBar.h"
-#import "CAAnimation+HJWTabBarViewAnimations.h"
 #import "CATransaction+TransactionWithAnimationsAndCompletion.h"
 #import "HJWTabBarItem.h"
 #import "UIView+Extension.h"

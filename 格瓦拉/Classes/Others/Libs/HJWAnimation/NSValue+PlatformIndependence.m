@@ -1,6 +1,6 @@
 //
 //  NSValue+PlatformIndependence.m
-//  RBBAnimation
+//  hjwAnimation
 //
 //  Created by Robert Böhnke on 11/04/14.
 //  Copyright (c) 2014 Robert Böhnke. All rights reserved.
@@ -13,51 +13,51 @@
 @implementation NSValue (PlatformIndependence)
 
 #if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
-+ (instancetype)rbb_valueWithCGRect:(CGRect)rect {
++ (instancetype)hjw_valueWithCGRect:(CGRect)rect {
     return [self valueWithCGRect:rect];
 }
 
-+ (instancetype)rbb_valueWithCGSize:(CGSize)size {
++ (instancetype)hjw_valueWithCGSize:(CGSize)size {
     return [self valueWithCGSize:size];
 }
 
-+ (instancetype)rbb_valueWithCGPoint:(CGPoint)point {
++ (instancetype)hjw_valueWithCGPoint:(CGPoint)point {
     return [self valueWithCGPoint:point];
 }
 
-- (CGRect)rbb_CGRectValue {
+- (CGRect)hjw_CGRectValue {
     return [self CGRectValue];
 }
 
-- (CGSize)rbb_CGSizeValue {
+- (CGSize)hjw_CGSizeValue {
     return [self CGSizeValue];
 }
 
-- (CGPoint)rbb_CGPointValue {
+- (CGPoint)hjw_CGPointValue {
     return [self CGPointValue];
 }
 #elif TARGET_OS_MAC
-+ (instancetype)rbb_valueWithCGRect:(CGRect)rect {
++ (instancetype)hjw_valueWithCGRect:(CGRect)rect {
     return [self valueWithRect:rect];
 }
 
-+ (instancetype)rbb_valueWithCGSize:(CGSize)size {
++ (instancetype)hjw_valueWithCGSize:(CGSize)size {
     return [self valueWithSize:size];
 }
 
-+ (instancetype)rbb_valueWithCGPoint:(CGPoint)point {
++ (instancetype)hjw_valueWithCGPoint:(CGPoint)point {
     return [self valueWithPoint:point];
 }
 
-- (CGRect)rbb_CGRectValue {
+- (CGRect)hjw_CGRectValue {
     return [self rectValue];
 }
 
-- (CGSize)rbb_CGSizeValue {
+- (CGSize)hjw_CGSizeValue {
     return [self sizeValue];
 }
 
-- (CGPoint)rbb_CGPointValue {
+- (CGPoint)hjw_CGPointValue {
     return [self pointValue];
 }
 #endif

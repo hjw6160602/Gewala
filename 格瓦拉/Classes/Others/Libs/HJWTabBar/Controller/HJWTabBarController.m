@@ -15,7 +15,7 @@
 #import "ProfileController.h"
 #import "UIImage+Extension.h"
 #import "GlobleSingleton.h"
-#import "RBBSpringAnimation.h"
+#import "HJWSpringAnimation.h"
 #import "HJWTabBar.h"
 #import "Const.h"
 
@@ -223,7 +223,7 @@
 //    KeyframeAnim.duration = 0.4f;
 //    KeyframeAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
     
-    RBBSpringAnimation *springAnim = [RBBSpringAnimation animation];
+    HJWSpringAnimation *springAnim = [HJWSpringAnimation animation];
     springAnim.keyPath = @"position.x";
     springAnim.fromValue = @(SCREEN_WIDTH/3);
     springAnim.toValue = @(0.0f);

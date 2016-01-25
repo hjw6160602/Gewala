@@ -1,16 +1,16 @@
 //
-//  RBBSpringAnimation.h
-//  RBBAnimation
+//  HJWSpringAnimation.h
+//  HJWAnimation
 //
-//  Created by Robert Böhnke on 10/14/13.
-//  Copyright (c) 2013 Robert Böhnke. All rights reserved.
+//  Created by Sai DiCaprio. on 16/1/7.
+//  Copyright © 2016年 SaiDicaprio. All rights reserved.
 //
 
 #import <QuartzCore/QuartzCore.h>
 
-#import "RBBAnimation.h"
+#import "HJWAnimation.h"
 
-@interface RBBSpringAnimation : RBBAnimation
+@interface HJWSpringAnimation : HJWAnimation
 
 @property (readwrite, nonatomic, assign) CGFloat damping;
 /** 质量 */
