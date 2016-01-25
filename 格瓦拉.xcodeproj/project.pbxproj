@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		780138DE1C52005900B9E2D6 /* HJWTransitionAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138DD1C52005900B9E2D6 /* HJWTransitionAnimate.m */; };
+		780138F91C52348E00B9E2D6 /* NSValue+PlatformIndependence.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138E31C52348E00B9E2D6 /* NSValue+PlatformIndependence.m */; };
+		780138FB1C52348E00B9E2D6 /* RBBAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138E71C52348E00B9E2D6 /* RBBAnimation.m */; };
+		780138FC1C52348E00B9E2D6 /* RBBBlockBasedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138E91C52348E00B9E2D6 /* RBBBlockBasedArray.m */; };
+		780138FD1C52348E00B9E2D6 /* RBBCubicBezier.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138EB1C52348E00B9E2D6 /* RBBCubicBezier.m */; };
+		780138FE1C52348E00B9E2D6 /* RBBCustomAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138ED1C52348E00B9E2D6 /* RBBCustomAnimation.m */; };
+		780138FF1C52348E00B9E2D6 /* RBBEasingFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138EF1C52348E00B9E2D6 /* RBBEasingFunction.m */; };
+		780139001C52348E00B9E2D6 /* RBBLinearInterpolation.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138F11C52348E00B9E2D6 /* RBBLinearInterpolation.m */; };
+		780139011C52348E00B9E2D6 /* RBBSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138F31C52348E00B9E2D6 /* RBBSpringAnimation.m */; };
+		780139021C52348E00B9E2D6 /* RBBTweenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138F51C52348E00B9E2D6 /* RBBTweenAnimation.m */; };
+		780139031C52348E00B9E2D6 /* UIColor+PlatformIndependence.m in Sources */ = {isa = PBXBuildFile; fileRef = 780138F71C52348E00B9E2D6 /* UIColor+PlatformIndependence.m */; };
 		788E33721C476E6400FC25EB /* HJWBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 788E33711C476E6400FC25EB /* HJWBarItem.m */; };
 		789CE3791C3FB1590033B583 /* HJWAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE3661C3FB1590033B583 /* HJWAnimatingTabBarConstants.m */; };
 		789CE38B1C3FB42B0033B583 /* HJWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 789CE38A1C3FB42B0033B583 /* HJWTabBarController.m */; };
@@ -57,6 +68,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		780138DC1C52005900B9E2D6 /* HJWTransitionAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTransitionAnimate.h; sourceTree = "<group>"; };
+		780138DD1C52005900B9E2D6 /* HJWTransitionAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWTransitionAnimate.m; sourceTree = "<group>"; };
+		780138E21C52348E00B9E2D6 /* NSValue+PlatformIndependence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+PlatformIndependence.h"; sourceTree = "<group>"; };
+		780138E31C52348E00B9E2D6 /* NSValue+PlatformIndependence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+PlatformIndependence.m"; sourceTree = "<group>"; };
+		780138E61C52348E00B9E2D6 /* RBBAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBAnimation.h; sourceTree = "<group>"; };
+		780138E71C52348E00B9E2D6 /* RBBAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBAnimation.m; sourceTree = "<group>"; };
+		780138E81C52348E00B9E2D6 /* RBBBlockBasedArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBBlockBasedArray.h; sourceTree = "<group>"; };
+		780138E91C52348E00B9E2D6 /* RBBBlockBasedArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBBlockBasedArray.m; sourceTree = "<group>"; };
+		780138EA1C52348E00B9E2D6 /* RBBCubicBezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBCubicBezier.h; sourceTree = "<group>"; };
+		780138EB1C52348E00B9E2D6 /* RBBCubicBezier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBCubicBezier.m; sourceTree = "<group>"; };
+		780138EC1C52348E00B9E2D6 /* RBBCustomAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBCustomAnimation.h; sourceTree = "<group>"; };
+		780138ED1C52348E00B9E2D6 /* RBBCustomAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBCustomAnimation.m; sourceTree = "<group>"; };
+		780138EE1C52348E00B9E2D6 /* RBBEasingFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBEasingFunction.h; sourceTree = "<group>"; };
+		780138EF1C52348E00B9E2D6 /* RBBEasingFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBEasingFunction.m; sourceTree = "<group>"; };
+		780138F01C52348E00B9E2D6 /* RBBLinearInterpolation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBLinearInterpolation.h; sourceTree = "<group>"; };
+		780138F11C52348E00B9E2D6 /* RBBLinearInterpolation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBLinearInterpolation.m; sourceTree = "<group>"; };
+		780138F21C52348E00B9E2D6 /* RBBSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBSpringAnimation.h; sourceTree = "<group>"; };
+		780138F31C52348E00B9E2D6 /* RBBSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBSpringAnimation.m; sourceTree = "<group>"; };
+		780138F41C52348E00B9E2D6 /* RBBTweenAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBBTweenAnimation.h; sourceTree = "<group>"; };
+		780138F51C52348E00B9E2D6 /* RBBTweenAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBBTweenAnimation.m; sourceTree = "<group>"; };
+		780138F61C52348E00B9E2D6 /* UIColor+PlatformIndependence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PlatformIndependence.h"; sourceTree = "<group>"; };
+		780138F71C52348E00B9E2D6 /* UIColor+PlatformIndependence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PlatformIndependence.m"; sourceTree = "<group>"; };
 		788E33701C476E6400FC25EB /* HJWBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWBarItem.h; sourceTree = "<group>"; };
 		788E33711C476E6400FC25EB /* HJWBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWBarItem.m; sourceTree = "<group>"; };
 		789CE3651C3FB1590033B583 /* HJWAnimatingTabBarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWAnimatingTabBarConstants.h; sourceTree = "<group>"; };
@@ -169,6 +202,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		780138DF1C52348E00B9E2D6 /* RBBAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				780138E61C52348E00B9E2D6 /* RBBAnimation.h */,
+				780138E71C52348E00B9E2D6 /* RBBAnimation.m */,
+				780138E81C52348E00B9E2D6 /* RBBBlockBasedArray.h */,
+				780138E91C52348E00B9E2D6 /* RBBBlockBasedArray.m */,
+				780138EA1C52348E00B9E2D6 /* RBBCubicBezier.h */,
+				780138EB1C52348E00B9E2D6 /* RBBCubicBezier.m */,
+				780138EC1C52348E00B9E2D6 /* RBBCustomAnimation.h */,
+				780138ED1C52348E00B9E2D6 /* RBBCustomAnimation.m */,
+				780138EE1C52348E00B9E2D6 /* RBBEasingFunction.h */,
+				780138EF1C52348E00B9E2D6 /* RBBEasingFunction.m */,
+				780138F01C52348E00B9E2D6 /* RBBLinearInterpolation.h */,
+				780138F11C52348E00B9E2D6 /* RBBLinearInterpolation.m */,
+				780138F21C52348E00B9E2D6 /* RBBSpringAnimation.h */,
+				780138F31C52348E00B9E2D6 /* RBBSpringAnimation.m */,
+				780138F41C52348E00B9E2D6 /* RBBTweenAnimation.h */,
+				780138F51C52348E00B9E2D6 /* RBBTweenAnimation.m */,
+				780138E21C52348E00B9E2D6 /* NSValue+PlatformIndependence.h */,
+				780138E31C52348E00B9E2D6 /* NSValue+PlatformIndependence.m */,
+				780138F61C52348E00B9E2D6 /* UIColor+PlatformIndependence.h */,
+				780138F71C52348E00B9E2D6 /* UIColor+PlatformIndependence.m */,
+			);
+			path = RBBAnimation;
+			sourceTree = "<group>";
+		};
 		789CE3561C3FB1590033B583 /* HJWTabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +247,8 @@
 			children = (
 				789CE39B1C3FB65B0033B583 /* HJWSpringAnimation.h */,
 				789CE39C1C3FB65B0033B583 /* HJWSpringAnimation.m */,
+				780138DC1C52005900B9E2D6 /* HJWTransitionAnimate.h */,
+				780138DD1C52005900B9E2D6 /* HJWTransitionAnimate.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -583,6 +645,7 @@
 		78E1B16C1C3E67F400308ED0 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				780138DF1C52348E00B9E2D6 /* RBBAnimation */,
 				789CE3561C3FB1590033B583 /* HJWTabBar */,
 				78E1B16D1C3E67F400308ED0 /* MJExtension */,
 				78E1B1831C3E67F400308ED0 /* SDWebImage */,
@@ -739,10 +802,14 @@
 				78E1B1CD1C3E69AF00308ED0 /* BuyTicketController.m in Sources */,
 				78E1B1B71C3E67F400308ED0 /* SDWebImageDownloaderOperation.m in Sources */,
 				78E279041C50A32B00E064D7 /* BaseRootController.m in Sources */,
+				780138FB1C52348E00B9E2D6 /* RBBAnimation.m in Sources */,
+				780138F91C52348E00B9E2D6 /* NSValue+PlatformIndependence.m in Sources */,
 				789CE39A1C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
 				78E1B1D61C3E69D300308ED0 /* ProfileController.m in Sources */,
 				78E1B1B01C3E67F400308ED0 /* NSString+MJExtension.m in Sources */,
 				78E1B1B31C3E67F400308ED0 /* SDImageCache.m in Sources */,
+				780139021C52348E00B9E2D6 /* RBBTweenAnimation.m in Sources */,
+				780139031C52348E00B9E2D6 /* UIColor+PlatformIndependence.m in Sources */,
 				78E1B1A91C3E67F400308ED0 /* MJProperty.m in Sources */,
 				78E1B1AF1C3E67F400308ED0 /* NSObject+MJProperty.m in Sources */,
 				789CE3941C3FB4520033B583 /* HJWTabBar.m in Sources */,
@@ -761,13 +828,20 @@
 				789CE39D1C3FB65B0033B583 /* HJWSpringAnimation.m in Sources */,
 				78E1B1BE1C3E67F400308ED0 /* UIImageView+HighlightedWebCache.m in Sources */,
 				78E1B1D31C3E69C800308ED0 /* FlimController.m in Sources */,
+				780139001C52348E00B9E2D6 /* RBBLinearInterpolation.m in Sources */,
 				78E1B1B11C3E67F400308ED0 /* MKAnnotationView+WebCache.m in Sources */,
+				780138DE1C52005900B9E2D6 /* HJWTransitionAnimate.m in Sources */,
 				78E1B1BB1C3E67F400308ED0 /* UIImage+GIF.m in Sources */,
+				780138FE1C52348E00B9E2D6 /* RBBCustomAnimation.m in Sources */,
+				780138FC1C52348E00B9E2D6 /* RBBBlockBasedArray.m in Sources */,
 				789CE38B1C3FB42B0033B583 /* HJWTabBarController.m in Sources */,
 				78E1B1A81C3E67F400308ED0 /* MJFoundation.m in Sources */,
+				780138FD1C52348E00B9E2D6 /* RBBCubicBezier.m in Sources */,
 				78E1B1B91C3E67F400308ED0 /* SDWebImagePrefetcher.m in Sources */,
+				780139011C52348E00B9E2D6 /* RBBSpringAnimation.m in Sources */,
 				78E1B1BA1C3E67F400308ED0 /* UIButton+WebCache.m in Sources */,
 				78E1B1BC1C3E67F400308ED0 /* UIImage+MultiFormat.m in Sources */,
+				780138FF1C52348E00B9E2D6 /* RBBEasingFunction.m in Sources */,
 				78E1B1B51C3E67F400308ED0 /* SDWebImageDecoder.m in Sources */,
 				78E278FA1C508E1A00E064D7 /* TransitionAnimTool.m in Sources */,
 				78E1B1C01C3E67F400308ED0 /* UIView+WebCacheOperation.m in Sources */,

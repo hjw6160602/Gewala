@@ -11,4 +11,12 @@
 @implementation GlobleSingleton
 singleton_implementation(GlobleSingleton)
 
+- (UIImageView *)RenderBGView{
+    UIImageView *imageView;
+    if (self.RenderBGImg) {
+        imageView = [[UIImageView alloc]initWithImage:self.RenderBGImg];
+    }
+    return imageView;
+}
+
 @end

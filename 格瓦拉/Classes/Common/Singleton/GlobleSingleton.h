@@ -19,5 +19,6 @@ singleton_interface(GlobleSingleton)
 @property (nonatomic, strong) UIImage *RenderBGImg;
 /** keyWindow  */
 @property (nonatomic, strong) UIWindow *keyWindow;
-
+/** 截图渲染好的image */
+@property (nonatomic, strong) UIImageView *RenderBGView;
 @end

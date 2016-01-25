@@ -10,9 +10,10 @@
 #import "TransitionAnimTool.h"
 #import "UIImage+Extension.h"
 #import "GlobleSingleton.h"
+#import "HJWTransitionAnimate.h"
 #import "Const.h"
 
-@interface BaseRootController ()
+@interface BaseRootController () <UIViewControllerTransitioningDelegate>
 @property (nonatomic, strong) CALayer *BGLayer;
 //@property (nonatomic, strong) CALayer *currentLayer;
 @end
@@ -51,6 +52,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source{
+    return [HJWTransitionAnimate new];
+}
+
+//- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed{
+//    
+//}
 
 
 @end

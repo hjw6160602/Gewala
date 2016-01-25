@@ -15,6 +15,7 @@
 #import "ProfileController.h"
 #import "UIImage+Extension.h"
 #import "GlobleSingleton.h"
+#import "RBBSpringAnimation.h"
 #import "HJWTabBar.h"
 #import "Const.h"
 
@@ -25,6 +26,7 @@
 @property (nonatomic, strong) NSArray *titles;
 /** 图片名称 */
 @property (nonatomic, strong) NSArray *imgNames;
+@property (nonatomic, strong) CALayer *layer;
 
 @end
 
@@ -185,28 +187,53 @@
     CALayer *layer = Controller.view.layer;
     
     //2. 将渲染好的背景插入到KEY_WINDOW的底下
-    UIImageView *BGImageView = [[UIImageView alloc]initWithImage:SINGLE.RenderBGImg];
-    [KEY_WINDOW insertSubview:BGImageView belowSubview:self.view];
+    [KEY_WINDOW insertSubview:SINGLE.RenderBGView belowSubview:self.view];
     
     //3. 传入layer开始动画
     [CATransaction transactionWithAnimations:^{
         [self Animating:layer];
     } Completion:^{
         //将背景从KEY_WINDOW上面移除
-        [BGImageView removeFromSuperview];
+        [SINGLE.RenderBGView removeFromSuperview];
     }];
 }
 
 //动画函数（仍待拓展）
 - (void)Animating:(CALayer*)layer{
-    CATransition *animation =[CATransition animation];
-    animation.duration = 0.3f;
-    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault]];
-    [animation setType:kCATransitionMoveIn];
-//    animation.beginTime = 0.2;
-    [animation setSubtype:kCATransitionFromRight];
+    self.layer = layer;
     
-    [layer addAnimation:animation forKey:@"transition"];
+//    CATransition *animation =[CATransition animation];
+//    animation.duration = 0.3f;
+//    animation.type = kCATransitionMoveIn;
+//    //（0~1）数字默认为0，数字越大越靠近结束位置
+//    animation.startProgress = 0.7;
+//    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+//    [animation setSubtype:kCATransitionFromRight];
+    
+    
+//    CATransition *transitionAnim =[CATransition animation];
+//    transitionAnim.type = kCATransitionFade;
+//    transitionAnim.duration = 0.4f;
+//    transitionAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+
+//    CAKeyframeAnimation *KeyframeAnim = [CAKeyframeAnimation animation];
+//    KeyframeAnim.keyPath = @"transform.translation.x";
+//    KeyframeAnim.values = @[@(100),@(0), @(-3), @(0)];
+//    KeyframeAnim.keyTimes = @[@(0.0),@(0.4),@(0.7),@(1)];
+//    KeyframeAnim.duration = 0.4f;
+//    KeyframeAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
+    
+    RBBSpringAnimation *springAnim = [RBBSpringAnimation animation];
+    springAnim.keyPath = @"position.x";
+    springAnim.fromValue = @(SCREEN_WIDTH/3);
+    springAnim.toValue = @(0.0f);
+    springAnim.velocity = 13;
+    springAnim.mass = 0.6;
+    springAnim.damping = 13;
+    springAnim.stiffness = 100;
+    springAnim.additive = YES;
+    springAnim.duration = [springAnim durationForEpsilon:0.01];
+    [self.layer addAnimation:springAnim forKey:@"transition"];
 }
 
 
