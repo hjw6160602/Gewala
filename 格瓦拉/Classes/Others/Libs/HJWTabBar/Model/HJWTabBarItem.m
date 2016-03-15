@@ -73,7 +73,6 @@
     UILabel *label = [[UILabel alloc]init];
     label.textColor = HJW_GLOBLE_R;
     
-    
     [CATransaction transactionWithAnimations:^{
         NSLog(@"动画开始执行");
         [self.titleLabel setTransform:CGAffineTransformMakeTranslation(10, 0)];
