@@ -27,6 +27,7 @@
 #define HJWColorGray(Gray) HJWColor (Gray, Gray, Gray)
 /** 颜色 */
 #define HJWColor(R, G, B)  [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:1.0]
+#define HJWColorA(R, G, B, A)  [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:(A)]
 
 /** 随机色 */
 #define HJWRandomColor HJWColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))

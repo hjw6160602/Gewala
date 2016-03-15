@@ -9,6 +9,7 @@
 #import "HJWTabBarItem.h"
 #import "HJWBarItem.h"
 #import "CATransaction+TransactionWithAnimationsAndCompletion.h"
+#import "Const.h"
 
 #define TitleFont [UIFont boldSystemFontOfSize:15]
 @implementation HJWTabBarItem
@@ -57,6 +58,7 @@
 #pragma mark - Setter方法
 - (void)setTitle:(NSString *)Title{
     _Title = Title;
+    self.titleLabel.text = Title;
     [self setTitle:Title forState:UIControlStateNormal];
 }
 
@@ -67,13 +69,17 @@
 
 - (void)setItemSelected:(BOOL)itemSelected{
     _itemSelected = itemSelected;
-    [self.titleLabel setTransform:CGAffineTransformMakeTranslation(10, 0)];
-//    [CATransaction transactionWithAnimations:^{
-//        NSLog(@"动画开始执行");
-//        [self.titleLabel setTransform:CGAffineTransformMakeTranslation(10, 0)];
-//    } Completion:^{
-//        NSLog(@"动画执行完毕");
-//    }];
+//    [self.titleLabel setTransform:CGAffineTransformMakeTranslation(10, 0)];
+    UILabel *label = [[UILabel alloc]init];
+    label.textColor = HJW_GLOBLE_R;
+    
+    
+    [CATransaction transactionWithAnimations:^{
+        NSLog(@"动画开始执行");
+        [self.titleLabel setTransform:CGAffineTransformMakeTranslation(10, 0)];
+    } Completion:^{
+        NSLog(@"动画执行完毕");
+    }];
 }
 
 

@@ -196,6 +196,7 @@
     } Completion:^{
         //将背景从KEY_WINDOW上面移除
         [SINGLE.RenderBGView removeFromSuperview];
+        [layer removeAllAnimations];
     }];
 }
 
@@ -218,7 +219,7 @@
 //    KeyframeAnim.keyTimes = @[@(0.0),@(0.4),@(0.7),@(1)];
 //    KeyframeAnim.duration = 0.4f;
 //    KeyframeAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
-    
+
     //2. 更复杂点的利用自定义动画模拟实物运动做
     HJWSpringAnimation *springAnim = [HJWSpringAnimation animation];
     springAnim.keyPath = @"position.x";
@@ -231,10 +232,14 @@
     springAnim.additive = YES;
     springAnim.duration = [springAnim durationForEpsilon:0.01];
     [self.layer addAnimation:springAnim forKey:@"transition"];
-    
-    
-    
 }
+
+/*
+ qwwr weer www fd rd eeer qwer fd 2 fd qwwr weer qqer
+ x    d           c  t    b            x    d
+ */
+
+
 
 
 

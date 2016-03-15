@@ -40,7 +40,7 @@
     HJWTabBarItem *item = [[HJWTabBarItem alloc]initWithTitle:title Image:image SelectedImg:selectedImg];
     
     // 2.设置tabBarItem的title颜色
-    item.titleColor = HJW_GLOBLE_R;
+    item.titleColor = HJWColorA(223, 97, 45, 0);
     
     // 3.添加按钮到自定义TabBar
     [self addSubview:item];

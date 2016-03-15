@@ -64,8 +64,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		78378A4C1C55D61600E4015A /* NSValue+PlatformIndependence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSValue+PlatformIndependence.h"; path = "../../HJWAnimation/NSValue+PlatformIndependence.h"; sourceTree = "<group>"; };
-		78378A4D1C55D61600E4015A /* NSValue+PlatformIndependence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSValue+PlatformIndependence.m"; path = "../../HJWAnimation/NSValue+PlatformIndependence.m"; sourceTree = "<group>"; };
+		78378A4C1C55D61600E4015A /* NSValue+PlatformIndependence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSValue+PlatformIndependence.h"; path = "../../../HJWAnimation/NSValue+PlatformIndependence.h"; sourceTree = "<group>"; };
+		78378A4D1C55D61600E4015A /* NSValue+PlatformIndependence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSValue+PlatformIndependence.m"; path = "../../../HJWAnimation/NSValue+PlatformIndependence.m"; sourceTree = "<group>"; };
 		78378A4E1C55D61600E4015A /* HJWAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HJWAnimation.h; path = ../../HJWAnimation/HJWAnimation.h; sourceTree = "<group>"; };
 		78378A4F1C55D61600E4015A /* HJWAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HJWAnimation.m; path = ../../HJWAnimation/HJWAnimation.m; sourceTree = "<group>"; };
 		78378A501C55D61600E4015A /* HJWBlockBasedArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HJWBlockBasedArray.h; path = ../../HJWAnimation/HJWBlockBasedArray.h; sourceTree = "<group>"; };
@@ -82,8 +82,8 @@
 		78378A5B1C55D61600E4015A /* HJWSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HJWSpringAnimation.m; path = ../../HJWAnimation/HJWSpringAnimation.m; sourceTree = "<group>"; };
 		78378A5C1C55D61600E4015A /* HJWTweenAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HJWTweenAnimation.h; path = ../../HJWAnimation/HJWTweenAnimation.h; sourceTree = "<group>"; };
 		78378A5D1C55D61600E4015A /* HJWTweenAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HJWTweenAnimation.m; path = ../../HJWAnimation/HJWTweenAnimation.m; sourceTree = "<group>"; };
-		78378A5E1C55D61600E4015A /* UIColor+PlatformIndependence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+PlatformIndependence.h"; path = "../../HJWAnimation/UIColor+PlatformIndependence.h"; sourceTree = "<group>"; };
-		78378A5F1C55D61600E4015A /* UIColor+PlatformIndependence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+PlatformIndependence.m"; path = "../../HJWAnimation/UIColor+PlatformIndependence.m"; sourceTree = "<group>"; };
+		78378A5E1C55D61600E4015A /* UIColor+PlatformIndependence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+PlatformIndependence.h"; path = "../../../HJWAnimation/UIColor+PlatformIndependence.h"; sourceTree = "<group>"; };
+		78378A5F1C55D61600E4015A /* UIColor+PlatformIndependence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+PlatformIndependence.m"; path = "../../../HJWAnimation/UIColor+PlatformIndependence.m"; sourceTree = "<group>"; };
 		788E33701C476E6400FC25EB /* HJWBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWBarItem.h; sourceTree = "<group>"; };
 		788E33711C476E6400FC25EB /* HJWBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJWBarItem.m; sourceTree = "<group>"; };
 		789CE3891C3FB42B0033B583 /* HJWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJWTabBarController.h; sourceTree = "<group>"; };
@@ -221,10 +221,6 @@
 				78378A551C55D61600E4015A /* HJWCustomAnimation.m */,
 				78378A581C55D61600E4015A /* HJWLinearInterpolation.h */,
 				78378A591C55D61600E4015A /* HJWLinearInterpolation.m */,
-				78378A4C1C55D61600E4015A /* NSValue+PlatformIndependence.h */,
-				78378A4D1C55D61600E4015A /* NSValue+PlatformIndependence.m */,
-				78378A5E1C55D61600E4015A /* UIColor+PlatformIndependence.h */,
-				78378A5F1C55D61600E4015A /* UIColor+PlatformIndependence.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -240,6 +236,10 @@
 		789CE3601C3FB1590033B583 /* CATransaction */ = {
 			isa = PBXGroup;
 			children = (
+				78378A4C1C55D61600E4015A /* NSValue+PlatformIndependence.h */,
+				78378A4D1C55D61600E4015A /* NSValue+PlatformIndependence.m */,
+				78378A5E1C55D61600E4015A /* UIColor+PlatformIndependence.h */,
+				78378A5F1C55D61600E4015A /* UIColor+PlatformIndependence.m */,
 				789CE3981C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.h */,
 				789CE3991C3FB4890033B583 /* CATransaction+TransactionWithAnimationsAndCompletion.m */,
 			);

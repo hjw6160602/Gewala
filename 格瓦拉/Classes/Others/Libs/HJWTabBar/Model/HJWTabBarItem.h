@@ -22,7 +22,8 @@
 @property (nonatomic, strong) UIColor *titleColor;
 /** 设置Title */
 @property (nonatomic, copy) NSString *Title;
-
+/** 设置TitleLabel */
+@property (nonatomic, strong) UILabel *txtLabel;
 /** 选中状态标记 */
 @property (nonatomic, assign, getter = isItemSelected) BOOL itemSelected;
 

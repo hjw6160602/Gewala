@@ -16,6 +16,7 @@
         if (animations) {
             animations();
         }
+        
     } [CATransaction commit];
 }
 
